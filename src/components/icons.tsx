@@ -1,4 +1,5 @@
 import {
+    Cross,
     Github,
     Instagram,
     LinkedinIcon,
@@ -11,6 +12,7 @@ export const Icons = {
     twitter: Twitter,
     instagram: Instagram,
     linkedIn: LinkedinIcon,
+    close: Cross,
     hero: ({ ...props }) => (
         <svg
             xmlns="http://www.w3.org/2000/svg"
