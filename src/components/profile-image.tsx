@@ -4,6 +4,8 @@ import Image from "next/image"
 
 import { SiteFooter } from "@/components/site-footer"
 
+export const revalidate = 0
+
 function getRandom(low: number, high: number) {
     return Math.floor(Math.random() * (high - low - 1)) + low
 }
