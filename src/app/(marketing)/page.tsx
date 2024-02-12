@@ -25,6 +25,8 @@ export default async function ProfilePage() {
                             "react",
                             "cpp",
                             "figma",
+                            "next-js",
+                            "flutter",
                         ]}
                     />
                     {/* <Profiles /> */}

@@ -4,6 +4,7 @@ import { TypeWriter } from "@/components/type-writer"
 
 import { Signature } from "../signature"
 import { Social } from "../social"
+import { Terminal } from "../terminal"
 
 interface HomeProps {
     name: string
@@ -43,6 +44,7 @@ export function Home(props: HomeProps) {
                 {/* <p className="mb-8 px-6 text-center lg:mb-16">
                     {props.description}{" "}
                 </p> */}
+                <Terminal className="" />
                 <Signature />
             </div>
         </section>

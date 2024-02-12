@@ -48,7 +48,7 @@ export const metadata = {
     authors: [
         {
             name: "rcsen",
-            url: "https://rcsen.com",
+            url: "https://rcsen.vercel.app",
         },
     ],
     creator: "rcsen",

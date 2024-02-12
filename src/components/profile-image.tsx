@@ -4,13 +4,11 @@ import Image from "next/image"
 
 import { SiteFooter } from "@/components/site-footer"
 
-export const revalidate = 0
-
-function getRandom(low: number, high: number) {
-    return Math.floor(Math.random() * (high - low - 1)) + low
-}
-
 export function ProfileImage() {
+    function getRandom(low: number, high: number) {
+        return Math.floor(Math.random() * (high - low - 1)) + low
+    }
+
     return (
         <div className="hidden h-full flex-col items-center justify-around pb-16 lg:fixed lg:flex lg:h-[90vh] lg:w-[40%]">
             <div className="relative flex h-full w-full overflow-hidden px-24 md:px-36 lg:px-20">
