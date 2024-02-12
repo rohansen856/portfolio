@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils"
 
-import { Signature } from "./signature"
+import { TypeWriter } from "./type-writer"
 
 export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
     var startDate = "2004-10-26"
@@ -51,7 +51,8 @@ export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
                     acquired 5 skills, and audited 2 packages in {diff.years}
                     yrs
                 </p>
-                <p className="text-green-400">$</p>
+                <p className="text-green-400">$npm run skills</p>
+                <TypeWriter />
             </div>
         </aside>
     )
