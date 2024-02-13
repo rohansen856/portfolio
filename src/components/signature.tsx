@@ -1,6 +1,6 @@
 "use client"
 
-export function Signature() {
+export function Signature(props: React.HTMLProps<HTMLDivElement>) {
     return (
         <svg
             version="1.1"
@@ -8,7 +8,7 @@ export function Signature() {
             viewBox="0 0 509.60003662109375 224.79998779296875"
             width="509.60003662109375"
             height="224.79998779296875"
-            className="max-w-[80%]"
+            className={`max-w-[80%] ${props.className}`}
         >
             <g
                 transform="translate(206 72.39999389648438) rotate(0 48.800018310546875 40)"

@@ -4,6 +4,8 @@ import Image from "next/image"
 
 import { SiteFooter } from "@/components/site-footer"
 
+import { Signature } from "./signature"
+
 export function ProfileImage() {
     function getRandom(low: number, high: number) {
         return Math.floor(Math.random() * (high - low - 1)) + low
@@ -18,6 +20,7 @@ export function ProfileImage() {
                     fill
                     className="object-contain"
                 />
+                <Signature className="absolute self-end opacity-30 duration-300 hover:opacity-100" />
                 <div className="z-10 h-1 w-full self-end rounded bg-[#02aab0] opacity-60"></div>
             </div>
             <div className="-center flex h-16 w-full justify-center">

@@ -51,7 +51,7 @@ export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
                     acquired 5 skills, and audited 2 packages in {diff.years}
                     yrs
                 </p>
-                <p className="text-green-400">$npm run skills</p>
+                <p className="text-green-400">$ flutter pub get skills</p>
                 <TypeWriter />
             </div>
         </aside>

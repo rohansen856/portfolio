@@ -118,7 +118,7 @@ export function Timeline() {
                                     <p className="text-lg opacity-60">
                                         {i.place}
                                     </p>
-                                    <p className="text-lg text-muted">
+                                    <p className="text-lg opacity-60">
                                         {i.date}
                                     </p>
                                 </motion.div>

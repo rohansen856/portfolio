@@ -1,8 +1,5 @@
 import Image from "next/image"
 
-import { TypeWriter } from "@/components/type-writer"
-
-import { Signature } from "../signature"
 import { Social } from "../social"
 import { Terminal } from "../terminal"
 
@@ -20,7 +17,7 @@ function getRandom(low: number, high: number) {
 export function Home(props: HomeProps) {
     return (
         <section
-            className="flex h-[80vh] w-full flex-col items-center justify-around lg:h-screen lg:flex-row lg:justify-center lg:pb-[20vh]"
+            className="flex h-[80vh] w-full flex-col items-center justify-around lg:h-screen lg:flex-row lg:justify-center lg:pb-[20vh] lg:pt-28"
             about="home"
             id="home"
         >
@@ -37,14 +34,13 @@ export function Home(props: HomeProps) {
                 <h1 className="animate-gradient bg-clip-text font-heading text-4xl text-transparent sm:text-5xl md:text-6xl lg:w-full xl:text-7xl">
                     Hi, I am <span className="capitalize">{props.name}</span>
                 </h1>
-                <h3 className="mb-3 h-7 text-lg font-bold text-primary md:text-xl lg:mb-12 lg:w-full lg:text-2xl">
+                <h3 className="mb-3 text-lg font-bold text-primary md:text-xl lg:mb-12 lg:w-full lg:text-2xl">
                     <Social social={["linkedin", "twitter", "instagram"]} />
                 </h3>
                 {/* <p className="mb-8 px-6 text-center lg:mb-16">
                     {props.description}{" "}
                 </p> */}
-                <Terminal className="" />
-                <Signature />
+                <Terminal className="mx-6 lg:mx-0" />
             </div>
         </section>
     )
