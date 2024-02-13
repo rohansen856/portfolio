@@ -27,10 +27,11 @@ export function Home(props: HomeProps) {
                     src={`/profile (${getRandom(1, 8)}).png`}
                     alt=""
                     fill
+                    priority
                     className="object-contain"
                 />
-                <Signature className="absolute max-h-[50%] self-end opacity-50" />
-                <div className="z-10 mx-24 h-1 w-full self-end rounded bg-[#02aab0]  opacity-60"></div>
+                <Signature className="absolute max-h-[50%] self-end" />
+                <div className="z-10 mx-24 h-1 w-full self-end rounded bg-[#02aab0] opacity-60"></div>
             </div>
             <div className="flex h-1/2 w-full flex-col items-center lg:h-full lg:items-start lg:justify-center lg:pl-16">
                 <h1 className="animate-gradient bg-clip-text font-heading text-4xl text-transparent sm:text-5xl md:text-6xl lg:w-full xl:text-7xl">
@@ -44,7 +45,7 @@ export function Home(props: HomeProps) {
                 {/* <p className="mb-8 px-6 text-center lg:mb-16">
                     {props.description}{" "}
                 </p> */}
-                <Terminal className="mx-6 lg:mx-0" />
+                <Terminal />
             </div>
         </section>
     )

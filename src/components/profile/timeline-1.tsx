@@ -1,7 +1,3 @@
-"use client"
-
-import { motion } from "framer-motion"
-
 interface QualificationProps {
     serial: number
     name: string
@@ -63,25 +59,18 @@ export function Timeline() {
                     <div className="w-[49%] max-w-[300px]">
                         {timeline.map((i) =>
                             i.serial % 2 !== 0 ? (
-                                <motion.div
+                                <div
                                     className="h-[95px] w-full pr-8 text-right"
-                                    transition={{
-                                        ease: "easeOut",
-                                        duration: 0.7,
-                                        delay: 0.3,
-                                    }}
-                                    initial={{ x: -100, opacity: 0 }}
-                                    whileInView={{ x: 0, opacity: 1 }}
                                     key={i.serial}
                                 >
                                     <h4 className="text-xl">{i.name}</h4>
                                     <p className="text-lg opacity-60">
                                         {i.place}
                                     </p>
-                                    <p className="text-lg text-muted">
+                                    <p className="text-lg opacity-60">
                                         {i.date}
                                     </p>
-                                </motion.div>
+                                </div>
                             ) : (
                                 <div
                                     className="h-[95px] w-full"
@@ -103,15 +92,8 @@ export function Timeline() {
                     <div className="w-[49%] max-w-[300px]">
                         {timeline.map((i) =>
                             i.serial % 2 === 0 ? (
-                                <motion.div
+                                <div
                                     className="h-[95px] w-full pl-8"
-                                    transition={{
-                                        ease: "easeIn",
-                                        duration: 0.7,
-                                        delay: 0.3,
-                                    }}
-                                    initial={{ x: 100, opacity: 0 }}
-                                    whileInView={{ x: 0, opacity: 1 }}
                                     key={i.serial}
                                 >
                                     <h4 className="text-xl">{i.name}</h4>
@@ -121,7 +103,7 @@ export function Timeline() {
                                     <p className="text-lg opacity-60">
                                         {i.date}
                                     </p>
-                                </motion.div>
+                                </div>
                             ) : (
                                 <div
                                     className="h-[95px] w-full"
