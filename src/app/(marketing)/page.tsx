@@ -3,10 +3,11 @@ import { Home } from "@/components/profile/home-1"
 import { Profiles } from "@/components/profile/profiles-1"
 import { Skills } from "@/components/profile/skills-1"
 import { Timeline } from "@/components/profile/timeline-1"
+import { SiteFooter } from "@/components/site-footer"
 
 export default async function ProfilePage() {
     return (
-        <div className="relative flex h-[90vh] w-full flex-col overflow-x-hidden lg:flex-row">
+        <div className="scr relative flex h-[90vh] w-full flex-col overflow-x-hidden lg:flex-row">
             <ProfileImage />
             <div className="ml-auto h-full w-full lg:w-[60%]">
                 <div className="relative w-full overflow-x-hidden">
@@ -30,6 +31,7 @@ export default async function ProfilePage() {
                         ]}
                     />
                     {/* <Profiles /> */}
+                    <SiteFooter className="bg-background lg:hidden" />
                 </div>
             </div>
         </div>
