@@ -18,11 +18,11 @@ function getRandom(low: number, high: number) {
 export function Home(props: HomeProps) {
     return (
         <section
-            className="flex h-[90vh] w-full flex-col items-center justify-around lg:h-screen lg:flex-row lg:justify-center lg:pb-[20vh] lg:pt-28"
+            className="flex h-[90vh] w-full flex-col items-center justify-around lg:h-[80vh] lg:flex-row lg:justify-center"
             about="home"
             id="home"
         >
-            <div className="relative mb-5 flex h-[70%] w-full justify-center overflow-hidden md:px-40 lg:hidden">
+            <div className="relative mb-5 flex h-[70%] w-full justify-center overflow-hidden lg:h-full">
                 <Image
                     src={`/profile (${getRandom(1, 8)}).png`}
                     alt=""
@@ -33,7 +33,7 @@ export function Home(props: HomeProps) {
                 <Signature className="absolute max-h-[50%] self-end" />
                 <div className="z-10 mx-24 h-1 w-full self-end rounded bg-[#02aab0] opacity-60"></div>
             </div>
-            <div className="flex h-1/2 w-full flex-col items-center lg:h-full lg:items-start lg:justify-center lg:pl-16">
+            <div className="flex h-1/2 w-full flex-col items-center lg:h-full lg:items-start lg:justify-center lg:pt-28">
                 <h1 className="animate-gradient bg-clip-text font-heading text-4xl text-transparent sm:text-5xl md:text-6xl lg:w-full xl:text-7xl">
                     Hi, I am <span className="capitalize">{props.name}</span>
                 </h1>

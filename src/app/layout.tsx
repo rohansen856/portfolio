@@ -1,6 +1,7 @@
 import { Inter as FontSans } from "next/font/google"
 import localFont from "next/font/local"
 
+import "@/styles/colors.css"
 import "@/styles/globals.css"
 
 import { siteConfig } from "@/config/site"
