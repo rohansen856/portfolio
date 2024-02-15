@@ -15,9 +15,9 @@ export function Skills(props: SkillsProps) {
                 Skills
             </h3>
             {props.skills.length > 0 ? (
-                <div className="grid w-full max-w-[500px] grid-cols-3 place-items-center">
+                <div className="mt-12 grid max-w-[500px] rotate-45 grid-cols-3 place-items-center gap-6 md:gap-8 lg:gap-12">
                     {props.skills.map((i) => (
-                        <div className="m-6 h-20 w-20 cursor-pointer">
+                        <div className="h-20 w-20 rotate-[-45deg] cursor-pointer duration-300 direction-reverse hover:scale-110">
                             <Image
                                 src={`/${i}.svg`}
                                 alt=""

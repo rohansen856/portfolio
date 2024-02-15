@@ -75,32 +75,32 @@ export function Current() {
             about="current"
             id="current"
         >
-            <h3 className="flex scale-75 justify-center gap-2 md:scale-90 lg:scale-100">
-                <div className="relative h-32 w-20">
+            <h3 className="cssName flex scale-75 justify-center gap-2 md:scale-90 lg:scale-100">
+                <div className="relative h-32 w-20 duration-200 hover:translate-y-[-10px]">
                     <div className="absolute z-20 h-32 w-8 bg-gradient-to-b from-[#405D86] to-[#384257]" />
                     <div className="absolute z-10 h-20 w-20 rounded-full bg-gradient-to-b from-[#F07F6B] to-[#EFC15C]" />
                     <div className="absolute bottom-0 z-0 h-0 w-0 border-x-[40px] border-b-[80px] border-x-transparent border-b-[#8D63B1]" />
                 </div>
-                <div className="relative h-32 w-24">
+                <div className="relative h-32 w-24 duration-200 hover:translate-y-[-10px]">
                     <div className="absolute z-0 h-32 w-24 rounded-full bg-gradient-to-r from-[#405D86] to-[#384257]" />
                     <div className="absolute left-6 top-6 z-10 h-20 w-12 rounded-full bg-gradient-to-b from-[#6ED0DD] to-[#70E2B9] drop-shadow-lg" />
                 </div>
-                <div className="relative h-32 w-24">
+                <div className="relative h-32 w-24 duration-200 hover:translate-y-[-10px]">
                     <div className="absolute z-0 h-32 w-24 bg-gradient-to-r from-[#405D86] to-[#384257]" />
                     <div className="absolute left-8 top-0 z-10 h-12 w-8 bg-gradient-to-t from-[#ED6088] to-[#C86FA3] drop-shadow-lg" />
                     <div className="absolute bottom-0 left-8 z-10 h-12 w-8 bg-gradient-to-b from-[#ED6088] to-[#C86FA3] drop-shadow-lg" />
                 </div>
-                <div className="relative h-32 w-24">
+                <div className="relative h-32 w-24 duration-200 hover:translate-y-[-10px]">
                     <div className="absolute bottom-0 z-0 h-0 w-0 border-x-[48px] border-b-[128px] border-x-transparent border-b-[#384257]" />
                     <div className="absolute bottom-0 left-[32px] z-10 h-0 w-0 border-x-[17px] border-b-[50px] border-x-transparent border-b-[#8D63B1] drop-shadow-lg" />
                 </div>
-                <div className="relative h-32 w-24">
+                <div className="relative h-32 w-24 duration-200 hover:translate-y-[-10px]">
                     <div className="absolute z-0 h-32 w-24 bg-gradient-to-r from-[#405D86] to-[#384257]" />
                     <div className="absolute bottom-0 left-2 z-10 h-0 w-0 border-x-[25px] border-b-[70px] border-x-transparent border-b-[#70E2B9] drop-shadow-lg" />
                     <div className="absolute right-2 top-0 z-10 h-0 w-0 rotate-180 border-x-[25px] border-b-[70px] border-x-transparent border-b-[#70E2B9] drop-shadow-lg" />
                 </div>
             </h3>
-            <div className="flex max-w-[95%] items-center rounded-lg bg-secondary">
+            <div className="relative flex max-w-[95%] cursor-default items-center rounded-md bg-secondary drop-shadow duration-300 hover:translate-y-[-10px] hover:scale-105">
                 <div className="relative m-2 h-32 w-28 overflow-hidden rounded-md bg-cyan-800">
                     <Image
                         src="/song.jpg"

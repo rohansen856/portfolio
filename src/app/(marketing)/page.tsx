@@ -8,7 +8,7 @@ import { SiteFooter } from "@/components/site-footer"
 
 export default async function ProfilePage() {
     return (
-        <div className="scr relative flex h-[90vh] w-full flex-col overflow-x-hidden lg:flex-row">
+        <div className="relative flex h-[90vh] w-full flex-col overflow-x-hidden lg:flex-row">
             <div className="relative w-full overflow-x-hidden">
                 <Home
                     name="rohan sen"
