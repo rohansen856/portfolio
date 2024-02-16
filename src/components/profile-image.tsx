@@ -10,7 +10,7 @@ export function ProfileImage() {
         return Math.floor(Math.random() * (high - low - 1)) + low
     }
 
-    const [picture, setPicture] = useState<number>(3)
+    const [picture, setPicture] = useState<number>(getRandom(1, 8) || 3)
 
     return (
         <div className="relative mb-5 flex h-[70%] w-full justify-center overflow-hidden lg:h-full">

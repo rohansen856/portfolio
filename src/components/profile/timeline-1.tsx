@@ -48,8 +48,8 @@ export function Timeline() {
     return (
         <section
             className="mb-16 mt-6 flex w-full flex-col items-center"
-            about="qualifications"
-            id="qualifications"
+            about="timeline"
+            id="timeline"
         >
             <h3 className="mb-12 w-full py-3 text-center text-3xl font-bold lg:text-4xl">
                 Timeline
