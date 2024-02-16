@@ -3,6 +3,7 @@ import localFont from "next/font/local"
 
 import "@/styles/colors.css"
 import "@/styles/globals.css"
+import "@/styles/custom.css"
 
 import { siteConfig } from "@/config/site"
 import { absoluteUrl, cn } from "@/lib/utils"

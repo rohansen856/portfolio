@@ -1,0 +1,71 @@
+.animate-gradient {
+    background-image: linear-gradient(to left, #2af598, #009efd, #2af598);
+    background-size: 200% 100%;
+    animation: gradientAnimation 2s alternate infinite;
+}
+
+.sign {
+    stroke-dasharray: 2530px;
+    stroke-dashoffset: 2530px;
+    animation: lineAnimation 2s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes lineAnimation {
+    to {
+        stroke-dashoffset: 1300px;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.bar {
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+        opacity: 0.35;
+        height: 3px;
+    }
+    100% {
+        opacity: 1;
+        height: 28px;
+    }
+}
+
+.bar:nth-child(3n) {
+    animation-duration: 474ms;
+}
+.bar:nth-child(3n-1) {
+    animation-duration: 433ms;
+}
+.bar:nth-child(3n-2) {
+    animation-duration: 407ms;
+}
+
+​.appbg {
+    opacity: 0.5;
+    --color-background-image-base: var(--color-background);
+    --color-background-image-accent-1: var(--indigo-a7);
+    --color-background-image-accent-2: var(--violet-6);
+    --color-background-image-accent-3: var(--purple-9);
+    --color-background-image-accent-4: var(--blue-5);
+    --color-background-image-accent-5: var(--slate-1);
+    --color-background-image-accent-6: var(--crimson-a5);
+    --color-background-image-accent-7: var(--indigo-5);
+}
+
+.cssName {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
+    -webkit-box-reflect: below 2px
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}

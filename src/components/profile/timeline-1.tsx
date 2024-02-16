@@ -83,9 +83,12 @@ export function Timeline() {
                     <div className="relative z-20 mt-[25px] flex w-[2px] max-w-[20px] flex-col items-center bg-blue-700">
                         {timeline.map((i) => (
                             <span
-                                className="mb-[calc(95px-24px)] h-6 w-6 rounded-full bg-blue-700"
+                                className="mb-[calc(95px-24px)] flex h-6 w-6 rounded-full border-2 border-blue-800"
                                 key={i.serial}
-                            ></span>
+                            >
+                                {" "}
+                                <span className="m-auto h-full w-full rounded-full border-[4px] border-muted bg-blue-700 duration-500 hover:border-none"></span>{" "}
+                            </span>
                         ))}
                     </div>
 

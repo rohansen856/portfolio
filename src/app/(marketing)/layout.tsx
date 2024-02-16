@@ -15,7 +15,7 @@ export default async function MarketingLayout({
     children,
 }: MarketingLayoutProps) {
     return (
-        <div className="relative flex min-h-screen flex-col lg:max-h-screen lg:overflow-hidden">
+        <div className="relative flex min-h-screen flex-col overflow-x-hidden">
             <AppShowcaseBg />
             <header className="container z-40">
                 <div className="flex h-12 items-center justify-between py-6">

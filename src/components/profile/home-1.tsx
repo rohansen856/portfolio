@@ -1,5 +1,6 @@
 import Image from "next/image"
 
+import { ProfileImage } from "../profile-image"
 import { Signature } from "../signature"
 import { Social } from "../social"
 import { Terminal } from "../terminal"
@@ -22,17 +23,7 @@ export function Home(props: HomeProps) {
             about="home"
             id="home"
         >
-            <div className="relative mb-5 flex h-[70%] w-full justify-center overflow-hidden lg:h-full">
-                <Image
-                    src={`/profile (${getRandom(1, 8)}).png`}
-                    alt=""
-                    fill
-                    priority
-                    className="object-contain"
-                />
-                <Signature className="absolute max-h-[50%] self-end" />
-                <div className="z-10 mx-24 h-1 w-full self-end rounded bg-[#02aab0] opacity-60"></div>
-            </div>
+            <ProfileImage />
             <div className="flex h-1/2 w-full flex-col items-center lg:h-full lg:items-start lg:justify-center lg:pt-28">
                 <h1 className="animate-gradient bg-clip-text font-heading text-4xl text-transparent sm:text-5xl md:text-6xl lg:w-full xl:text-7xl">
                     Hi, I am <span className="capitalize">{props.name}</span>
