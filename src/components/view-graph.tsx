@@ -3,6 +3,13 @@
 import React, { useCallback, useState } from "react"
 import { Pie, PieChart, Sector } from "recharts"
 
+const data = [
+    { name: "Group A", value: 400 },
+    { name: "Group B", value: 300 },
+    { name: "Group C", value: 300 },
+    { name: "Group D", value: 200 },
+]
+
 const renderActiveShape = (props: any) => {
     const RADIAN = Math.PI / 180
     const {
@@ -16,7 +23,6 @@ const renderActiveShape = (props: any) => {
         fill,
         payload,
         percent,
-        name,
         value,
     } = props
     const sin = Math.sin(-RADIAN * midAngle)
@@ -63,7 +69,7 @@ const renderActiveShape = (props: any) => {
                 y={ey}
                 textAnchor={textAnchor}
                 fill="#333"
-            >{`${name} ${value}`}</text>
+            >{`PV ${value}`}</text>
             <text
                 x={ex + (cos >= 0 ? 1 : -1) * 12}
                 y={ey}
@@ -77,14 +83,10 @@ const renderActiveShape = (props: any) => {
     )
 }
 
-export default function App({
-    data,
-}: {
-    data: { name: string; value: number }[]
-}) {
+export default function App() {
     const [activeIndex, setActiveIndex] = useState(0)
     const onPieEnter = useCallback(
-        (_: any, index: any) => {
+        (_: any, index: React.SetStateAction<number>) => {
             setActiveIndex(index)
         },
         [setActiveIndex]

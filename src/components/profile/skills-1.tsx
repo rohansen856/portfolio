@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { CircularBg } from "../circle-background"
+import { CircularBg } from "@/components/circle-background"
 
 interface SkillsProps {
     skills: string[]

@@ -1,8 +1,7 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-
-import { TypeWriter } from "./type-writer"
+import { TypeWriter } from "@/components/type-writer"
 
 export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
     var startDate = "2004-10-26"

@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useRef, useState } from "react"
 import Image from "next/image"
 
 import {
@@ -14,8 +14,7 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
-
-import { Button } from "./ui/button"
+import { Button } from "@/components/ui/button"
 
 export function CurrentSong() {
     const [isPlaying, setPlaying] = useState<boolean>(false)

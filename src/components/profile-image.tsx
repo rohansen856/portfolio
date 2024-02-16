@@ -1,9 +1,9 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Image from "next/image"
 
-import { Signature } from "./signature"
+import { Signature } from "@/components/signature"
 
 export function ProfileImage() {
     function getRandom(low: number, high: number) {

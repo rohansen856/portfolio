@@ -1,4 +1,4 @@
-import { CurrentSong } from "../current-song"
+import { CurrentSong } from "@/components/current-song"
 
 export function Current() {
     return (

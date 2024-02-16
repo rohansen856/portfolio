@@ -1,9 +1,6 @@
-import Image from "next/image"
-
-import { ProfileImage } from "../profile-image"
-import { Signature } from "../signature"
-import { Social } from "../social"
-import { Terminal } from "../terminal"
+import { ProfileImage } from "@/components/profile-image"
+import { Social } from "@/components/social"
+import { Terminal } from "@/components/terminal"
 
 interface HomeProps {
     name: string

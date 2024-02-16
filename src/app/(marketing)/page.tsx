@@ -1,4 +1,3 @@
-import { ProfileImage } from "@/components/profile-image"
 import { Current } from "@/components/profile/current-1"
 import { Home } from "@/components/profile/home-1"
 import { Profiles } from "@/components/profile/profiles-1"
@@ -31,7 +30,7 @@ export default async function ProfilePage() {
                         "tailwindcss",
                     ]}
                 />
-                {/* <Profiles /> */}
+                <Profiles />
                 <SiteFooter />
             </div>
         </div>
