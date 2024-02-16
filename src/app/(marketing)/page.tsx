@@ -31,7 +31,7 @@ export default async function ProfilePage() {
                     ]}
                 />
                 <Profiles />
-                {/* <SiteFooter /> */}
+                <SiteFooter />
             </div>
         </div>
     )
