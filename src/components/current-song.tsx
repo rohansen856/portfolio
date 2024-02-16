@@ -34,7 +34,11 @@ export function CurrentSong() {
         return
     }
     return (
-        <div className="music playing relative flex max-w-[95%] cursor-default items-center drop-shadow duration-300 hover:translate-y-[-10px] hover:scale-105">
+        <div
+            className={`relative flex max-w-[95%] cursor-default items-center drop-shadow duration-300 hover:translate-y-[-10px] hover:scale-105 ${
+                isPlaying ? "playing" : "music"
+            }`}
+        >
             <div className="absolute z-[-10] h-full w-full rounded-md bg-secondary" />
             <div className="relative m-2 h-32 w-28 overflow-hidden rounded-md bg-cyan-800">
                 <Image src="/song.jpg" alt="" fill className="object-cover" />
@@ -93,9 +97,7 @@ export function CurrentSong() {
                             ))}
                         </div>
                     ) : (
-                        <p className="text-secondary">
-                            Listen to my recent song
-                        </p>
+                        <p className="opacity-75">Listen to my recent song</p>
                     )}
                 </div>
             </div>

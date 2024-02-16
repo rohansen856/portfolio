@@ -1,3 +1,5 @@
+import { CurrentSong } from "../current-song"
+
 export function Current() {
     return (
         <section
@@ -30,6 +32,7 @@ export function Current() {
                     <div className="absolute right-2 top-0 z-10 h-0 w-0 rotate-180 border-x-[25px] border-b-[70px] border-x-transparent border-b-[#70E2B9] drop-shadow-lg" />
                 </div>
             </h3>
+            <CurrentSong />
         </section>
     )
 }
