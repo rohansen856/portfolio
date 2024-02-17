@@ -6,16 +6,16 @@ import Image from "next/image"
 import { Signature } from "@/components/signature"
 
 export function ProfileImage() {
-    function getRandom(low: number, high: number) {
-        return Math.floor(Math.random() * (high - low - 1)) + low
-    }
+    // function getRandom(low: number, high: number) {
+    //     return Math.floor(Math.random() * (high - low - 1)) + low
+    // }
 
-    const [picture, setPicture] = useState<number>(getRandom(1, 8) || 3)
+    // const [picture, setPicture] = useState<number>(getRandom(1, 8) || 3)
 
     return (
         <div className="relative mb-5 flex h-[70%] w-full justify-center overflow-hidden lg:h-full">
             <Image
-                src={`/profile (${picture}).png`}
+                src={`/profile (${3}).png`}
                 alt=""
                 fill
                 priority
