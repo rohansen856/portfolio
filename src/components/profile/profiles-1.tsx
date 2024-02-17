@@ -34,8 +34,8 @@ export async function Profiles() {
     return (
         <section
             className="relative z-0 mt-16 flex w-full flex-col items-center pb-16"
-            about="qualifications"
-            id="qualifications"
+            about="profiles"
+            id="profiles"
         >
             <div className="fade absolute top-0 h-1/4 w-full rotate-180"></div>
             <div className="fade absolute bottom-0 h-1/4 w-full"></div>

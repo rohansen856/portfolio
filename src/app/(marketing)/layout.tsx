@@ -17,7 +17,7 @@ export default async function MarketingLayout({
     return (
         <div className="relative flex min-h-screen flex-col overflow-x-hidden">
             <AppShowcaseBg />
-            <header className="container z-40">
+            <header className="container fixed top-0 z-40">
                 <div className="flex h-12 items-center justify-between py-6">
                     <MainNav items={marketingConfig.mainNav} />
                 </div>

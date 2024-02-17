@@ -14,5 +14,9 @@ export const marketingConfig: MarketingConfig = {
             title: "Skills",
             href: "/#skills",
         },
+        {
+            title: "Profiles",
+            href: "/#profiles",
+        },
     ],
 }
