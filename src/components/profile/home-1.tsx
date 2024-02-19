@@ -16,7 +16,7 @@ function getRandom(low: number, high: number) {
 export function Home(props: HomeProps) {
     return (
         <section
-            className="flex h-[90vh] w-full flex-col items-center justify-around lg:h-[80vh] lg:flex-row lg:justify-center"
+            className="flex h-[90vh] w-full flex-col items-center justify-around lg:h-[80vh] lg:flex-row lg:justify-center lg:pt-28"
             about="home"
             id="home"
         >

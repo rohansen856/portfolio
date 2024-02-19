@@ -47,7 +47,7 @@ export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
                     + rcsen@{diff.years}.{diff.months}.{diff.days}
                 </p>
                 <p className="text-white">
-                    acquired 5 skills, and audited 2 packages in {diff.years}
+                    acquired 5 skills, and worked in 2 domains in {diff.years}
                     yrs
                 </p>
                 <p className="text-green-400">$ flutter pub get skills</p>

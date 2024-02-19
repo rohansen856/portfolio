@@ -1,5 +1,11 @@
 import Image from "next/image"
 
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 import { CircularBg } from "@/components/circle-background"
 
 interface SkillsProps {
@@ -30,13 +36,22 @@ export function Skills(props: SkillsProps) {
                     <CircularBg />
                     {skills.map((i) => (
                         <div className="h-20 w-20 rotate-[-45deg] cursor-pointer duration-300 direction-reverse hover:scale-110">
-                            <Image
-                                src={`/${i}.svg`}
-                                alt=""
-                                width={16}
-                                height={16}
-                                className="h-full w-full"
-                            />
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Image
+                                            src={`/${i}.svg`}
+                                            alt=""
+                                            width={16}
+                                            height={16}
+                                            className="h-full w-full"
+                                        />
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p className="capitalize">{i}</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
                         </div>
                     ))}
                 </div>
