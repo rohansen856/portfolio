@@ -1,11 +1,9 @@
 import Link from "next/link"
 
 import { marketingConfig } from "@/config/marketing"
-import { absoluteUrl, cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
 import { AppShowcaseBg } from "@/components/app-bg"
 import { MainNav } from "@/components/main-nav"
-import { SiteFooter } from "@/components/site-footer"
+import { RightBar } from "@/components/side-bar"
 
 interface MarketingLayoutProps {
     children: React.ReactNode
@@ -17,7 +15,8 @@ export default async function MarketingLayout({
     return (
         <div className="relative flex min-h-screen flex-col overflow-x-hidden">
             <AppShowcaseBg />
-            <header className="container fixed top-0 z-40">
+            <RightBar className="hidden md:flex lg:hidden xl:flex" />
+            <header className="container fixed top-0 z-40 backdrop-blur">
                 <div className="flex h-12 items-center justify-between py-6">
                     <MainNav items={marketingConfig.mainNav} />
                 </div>
