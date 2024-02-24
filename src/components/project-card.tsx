@@ -1,11 +1,11 @@
 import Image from "next/image"
+import Link from "next/link"
 
 function ButtonLink({ text, href }: any) {
     return (
-        <a
+        <Link
             href={href}
             target="_blank"
-            rel="noreferrer"
             className={`bg-midnight group mt-2 inline-flex items-center rounded-full px-6 py-1.5 font-semibold text-background no-underline hover:bg-slate-700 dark:bg-gray-200`}
         >
             {text}
@@ -26,7 +26,7 @@ function ButtonLink({ text, href }: any) {
                     d="M1 1l4 4-4 4"
                 ></path>
             </svg>
-        </a>
+        </Link>
     )
 }
 

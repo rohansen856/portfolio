@@ -40,28 +40,28 @@ export function Current() {
 ;<svg width="50" height="50" version="1.1" className="hidden">
     <defs>
         <linearGradient id="gradient-1" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#6ED0DD"></stop>
-            <stop offset="100%" stop-color="#70E2B9"></stop>
+            <stop offset="0%" stopColor="#6ED0DD"></stop>
+            <stop offset="100%" stopColor="#70E2B9"></stop>
         </linearGradient>
         <linearGradient id="gradient-2" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#405D86"></stop>
-            <stop offset="100%" stop-color="#384257"></stop>
+            <stop offset="0%" stopColor="#405D86"></stop>
+            <stop offset="100%" stopColor="#384257"></stop>
         </linearGradient>
         <linearGradient id="gradient-3" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#ED6088"></stop>
-            <stop offset="100%" stop-color="#C86FA3"></stop>
+            <stop offset="0%" stopColor="#ED6088"></stop>
+            <stop offset="100%" stopColor="#C86FA3"></stop>
         </linearGradient>
         <linearGradient id="gradient-4" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#F07F6B"></stop>
-            <stop offset="100%" stop-color="#EFC15C"></stop>
+            <stop offset="0%" stopColor="#F07F6B"></stop>
+            <stop offset="100%" stopColor="#EFC15C"></stop>
         </linearGradient>
         <linearGradient id="gradient-5" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#8D63B1"></stop>
-            <stop offset="100%" stop-color="#8179CB"></stop>
+            <stop offset="0%" stopColor="#8D63B1"></stop>
+            <stop offset="100%" stopColor="#8179CB"></stop>
         </linearGradient>
         <linearGradient id="gradient-6" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0%" stop-color="#EDD460"></stop>
-            <stop offset="100%" stop-color="#EDBC39"></stop>
+            <stop offset="0%" stopColor="#EDD460"></stop>
+            <stop offset="100%" stopColor="#EDBC39"></stop>
         </linearGradient>
     </defs>
 </svg>

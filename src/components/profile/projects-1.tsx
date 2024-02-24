@@ -7,19 +7,19 @@ const projectsConfig = [
         color: "from-slate-50 to-indigo-200 dark:border-slate-700 dark:from-slate-800 dark:to-indigo-900",
         name: "Portbuilder",
         description: "A Web Project Made using nextjs, tailwindcss and drizzle",
-        link: "github.com/rohansen856",
+        link: "https://github.com/rohansen856",
     },
     {
         color: "from-purple-50 to-fuchsia-300 dark:border-slate-700 dark:from-purple-900/50 dark:to-fuchsia-700",
         name: "CampusOrbit - Flutter",
         description: "A Flutter App created for IIITDMJ students",
-        link: "github.com/rohansen856",
+        link: "https://github.com/rohansen856",
     },
     {
         color: "from-slate-50 to-blue-300 dark:border-slate-700 dark:from-slate-800 dark:to-blue-900",
         name: "Campusorbit - WEB",
         description: "A Web Admin panel to manage Campusorbit - Flutter app",
-        link: "github.com/rohansen856",
+        link: "https://github.com/rohansen856",
     },
 ]
 
