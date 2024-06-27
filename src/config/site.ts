@@ -7,7 +7,7 @@ export const siteConfig: SiteConfig = {
     url: "https://rcsen.vercel.app",
     ogImage: "https://rcsen.vercel.app/og.jpg",
     links: {
-        twitter: "https://twitter.com/rohansen856",
+        twitter: "https://x.com/rohansen856",
         github: "https://github.com/rohansen856/",
     },
 }

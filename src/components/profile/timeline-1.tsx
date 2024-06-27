@@ -58,7 +58,7 @@ export function Timeline() {
                 viewBox="0 0 1273 906"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="lgl:h-[450px] absolute h-full w-full lg:w-[450px]"
+                className="lgl:h-[450px] absolute z-[-10] h-full w-full lg:w-[450px]"
             >
                 <g>
                     <path

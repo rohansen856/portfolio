@@ -2,7 +2,12 @@ import Image from "next/image"
 import Link from "next/link"
 
 export function RightBar(props: React.HTMLAttributes<HTMLDivElement>) {
-    const social = ["github", "linkedin", "instagram", "twitter"]
+    const social = [
+        { name: "github", link: "https://github.com/rohansen856/" },
+        { name: "linkedin", link: "https://www.linkedin.com/in/rohan856/" },
+        { name: "instagram", link: "https://www.instagram.com/rcsen856" },
+        { name: "twitter", link: "https://x.com/rohansen856" },
+    ]
     return (
         <div
             className={`fixed right-20 top-[30vh] z-[100] h-[70vh] w-8 ${props.className} flex flex-col items-center justify-end`}
@@ -11,12 +16,13 @@ export function RightBar(props: React.HTMLAttributes<HTMLDivElement>) {
                 {social.map((i) => (
                     <div className="flex h-16 w-16">
                         <Link
-                            href={`https://${i}.com`}
+                            href={i.link}
+                            target="_blank"
                             className="m-auto flex cursor-pointer rounded-full p-2 hover:h-16 hover:w-16"
                         >
                             <div className="relative m-auto h-8 w-8 duration-200">
                                 <Image
-                                    src={`/${i}.svg`}
+                                    src={`/${i.name}.svg`}
                                     alt=""
                                     fill
                                     className="object-cover"

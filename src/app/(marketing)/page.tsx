@@ -3,6 +3,7 @@ import { Home } from "@/components/profile/home-1"
 import { Profiles } from "@/components/profile/profiles-1"
 import { Projects } from "@/components/profile/projects-1"
 import { Skills } from "@/components/profile/skills-1"
+import { Test } from "@/components/profile/test"
 import { Timeline } from "@/components/profile/timeline-1"
 import { SiteFooter } from "@/components/site-footer"
 
@@ -21,18 +22,19 @@ export default async function ProfilePage() {
                 <Skills
                     skills={[
                         "typescript",
-                        "javascript",
+                        "blender",
                         "dartlang",
                         "react",
                         "cpp",
                         "figma",
                         "next-js",
                         "flutter",
-                        "tailwindcss",
+                        "docker",
                     ]}
                 />
                 <Projects />
                 <Profiles />
+                <Test />
                 <SiteFooter />
             </div>
         </div>
