@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react"
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 
 import {
     AlertDialog,
@@ -17,20 +18,23 @@ import {
 import { Button } from "@/components/ui/button"
 
 export function CurrentSong() {
+    const router = useRouter()
     const [isPlaying, setPlaying] = useState<boolean>(false)
     const audioRef = useRef<HTMLAudioElement>(null)
 
     const handlePlayPause = () => {
-        if (!audioRef.current) return
-        if (isPlaying) {
-            audioRef.current.pause()
-            setPlaying(false)
-            return
-        }
+        // if (!audioRef.current) return
+        // if (isPlaying) {
+        //     audioRef.current.pause()
+        //     setPlaying(false)
+        //     return
+        // }
 
-        audioRef.current.play()
+        // audioRef.current.play()
         setPlaying(true)
-        return
+        return router.push(
+            "https://open.spotify.com/track/0GWNtMohuYUEHVZ40tcnHF?si=J0vzmTVyQU2ZfrkmoJCbeg"
+        )
     }
     return (
         <div
@@ -58,7 +62,6 @@ export function CurrentSong() {
                     </div>
                 </div>
                 <div className="flex h-16 w-full items-center gap-2 rounded-sm p-1">
-                    <audio ref={audioRef} src="/specialz.mp3" />
                     <AlertDialog>
                         <AlertDialogTrigger asChild>
                             <Button className="relative h-8 w-8 cursor-pointer bg-transparent p-1 hover:scale-105 hover:bg-transparent">
