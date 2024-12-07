@@ -2,6 +2,7 @@
 
 import React from "react"
 import Image from "next/image"
+import Link from "next/link"
 import {
     IconBoxAlignRightFilled,
     IconClipboardCopy,
@@ -13,6 +14,102 @@ import { motion } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 import { BentoGrid, BentoGridItem } from "@/components/bento-grid"
+
+import { Badge } from "../ui/badge"
+import { buttonVariants } from "../ui/button"
+
+const projects = [
+    {
+        kind: "Large Scale Integrations",
+        details: [
+            {
+                image: "/projects/campusorbit.png",
+                name: "Campusorbit",
+                badges: [
+                    "backend",
+                    "framer-motion",
+                    "nextjs",
+                    "rust",
+                    "flutter",
+                    "API",
+                    "Auth0",
+                    "PostgreSQL",
+                ],
+                description:
+                    "A freelance project made for ZEALTECH, a media marketing website. Made using nextjs and framer motion for advanced animations.",
+                github: "https://github.com/rohansen856/digi-marketing",
+                live: "https://campusorbit.vercel.app",
+            },
+        ],
+    },
+    {
+        kind: "Freelance/UI Projects",
+        details: [
+            {
+                image: "/projects/zealtech.png",
+                name: "Zealtech",
+                badges: ["freelance", "framer-motion", "nextjs", "UX"],
+                description:
+                    "A freelance project made for ZEALTECH, a media marketing website. Made using nextjs and framer motion for advanced animations.",
+                github: "https://github.com/rohansen856/digi-marketing",
+                live: "https://zealtech.vercel.app",
+            },
+            {
+                image: "/projects/bettermindlabs.png",
+                name: "BettermindLabs",
+                badges: ["freelance", "framer-motion", "nextjs", "UI", "UX"],
+                description: "",
+                github: "https://github.com/rohansen856/tech-tank",
+                live: "https://finance-dost.vercel.app",
+            },
+            {
+                image: "/projects/ctrlcrew.png",
+                name: "Ctrl Crew",
+                badges: [
+                    "team",
+                    "organization",
+                    "framer-motion",
+                    "nextjs",
+                    "UI",
+                    "UX",
+                ],
+                description: "",
+                github: "https://github.com/rohansen856/tech-tank",
+                live: "https://ctrl-crew.vercel.app",
+            },
+            {
+                image: "/projects/lawhelp.png",
+                name: "LawHelp",
+                badges: [
+                    "personal",
+                    "legal",
+                    "framer-motion",
+                    "nextjs",
+                    "mysql",
+                ],
+                description: "",
+                github: "https://github.com/rohansen856/lawhelp",
+                live: "https://lawhelp.vercel.app",
+            },
+            {
+                image: "/projects/visionai.png",
+                name: "Vision AI",
+                badges: ["freelance", "ai", "framer-motion", "vitejs"],
+                description: "",
+                github: "https://github.com/rohansen856/ui-package",
+                live: "https://ui-package.vercel.app",
+            },
+            {
+                image: "/projects/jobify.png",
+                name: "Job Portal",
+                badges: ["freelance", "job-search", "framer-motion", "nextjs"],
+                description: "",
+                github: "https://github.com/rohansen856/job-portal",
+                live: "https://home-job-portal.vercel.app/",
+            },
+        ],
+    },
+]
 
 export function Projects() {
     return (
@@ -36,6 +133,73 @@ export function Projects() {
                     />
                 ))}
             </BentoGrid>
+            <div className="mt-20 space-y-8">
+                {projects.map(({ kind, details }) => (
+                    <>
+                        <h3 className="mb-8 text-center text-5xl font-bold">
+                            {kind}
+                        </h3>
+                        {details.map((i) => (
+                            <div className="flex w-full gap-16 overflow-hidden rounded-xl border bg-secondary/50">
+                                <div className="relative h-[250px] w-[500px]">
+                                    <Image src={i.image} alt="" fill />
+                                </div>
+                                <div className="flex h-full flex-1 flex-col py-4">
+                                    <h4 className="mb-1 text-3xl font-bold">
+                                        {i.name}
+                                    </h4>
+                                    <div className="mb-4 space-x-1">
+                                        {i.badges.map((j) => (
+                                            <Badge
+                                                variant={"outline"}
+                                                className="border-purple-600 bg-purple-600/20"
+                                            >
+                                                {j}
+                                            </Badge>
+                                        ))}
+                                    </div>
+                                    <p className="pr-8">{i.description}</p>
+                                    <div className="mt-12 flex">
+                                        {i.github && (
+                                            <Link
+                                                href={i.github}
+                                                className={cn(
+                                                    buttonVariants(),
+                                                    "mr-4 gap-6 rounded text-lg"
+                                                )}
+                                            >
+                                                <Image
+                                                    src={"/github.svg"}
+                                                    alt=""
+                                                    height={50}
+                                                    width={50}
+                                                />
+                                                Github
+                                            </Link>
+                                        )}
+                                        {i.live && (
+                                            <Link
+                                                href={i.live}
+                                                className={cn(
+                                                    buttonVariants({
+                                                        variant: "outline",
+                                                    }),
+                                                    "mr-8 gap-4 rounded border-2 text-lg"
+                                                )}
+                                            >
+                                                <span className="flex size-4 items-center justify-center rounded-full border-2 border-green-600 p-px">
+                                                    <span className="size-full rounded-full bg-green-600" />
+                                                </span>
+                                                Live
+                                            </Link>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </>
+                ))}
+            </div>
         </section>
     )
 }
