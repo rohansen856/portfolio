@@ -10,7 +10,7 @@ export function Social(
         >
             {props.social.map((i) => (
                 <Link href={`https://${i}.com`} className="cursor-pointer">
-                    <div className="relative h-8 w-8 duration-200 hover:scale-110">
+                    <div className="relative h-8 w-8 overflow-hidden rounded-full border-2 border-white/50 bg-white/20 duration-200 hover:scale-110">
                         <Image
                             src={`/${i}.svg`}
                             alt=""

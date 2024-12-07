@@ -3,7 +3,7 @@ import postgres from "postgres"
 
 import { env } from "@/env.mjs"
 
-const connectionString = env.DATABASE_URL
+const connectionString = ""
 
 // Disable prefetch as it is not supported for "Transaction" pool mode
 const client = postgres(connectionString, { prepare: false })

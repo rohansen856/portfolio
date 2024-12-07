@@ -17,11 +17,11 @@ import { BentoGrid, BentoGridItem } from "@/components/bento-grid"
 export function Projects() {
     return (
         <section
-            className="relative mb-16 mt-6 w-full"
+            className="container relative mb-16 mt-6 w-full"
             about="projects"
             id="projects"
         >
-            <h3 className="mb-12 w-full py-3 text-center text-3xl font-bold lg:text-4xl">
+            <h3 className="mb-12 w-full rounded-xl bg-secondary py-3 text-center text-3xl font-bold lg:text-4xl">
                 Projects
             </h3>
             <BentoGrid className="mx-auto my-16 max-w-4xl md:auto-rows-[20rem]">

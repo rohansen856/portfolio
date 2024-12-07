@@ -7,6 +7,7 @@ export function RightBar(props: React.HTMLAttributes<HTMLDivElement>) {
         { name: "linkedin", link: "https://www.linkedin.com/in/rohan856/" },
         { name: "instagram", link: "https://www.instagram.com/rcsen856" },
         { name: "twitter", link: "https://x.com/rohansen856" },
+        { name: "gmail", link: "mailto:rohansen856@gmail.com" },
     ]
     return (
         <div
@@ -14,13 +15,13 @@ export function RightBar(props: React.HTMLAttributes<HTMLDivElement>) {
         >
             <div className="flex h-full flex-col items-center justify-end gap-4 pb-16">
                 {social.map((i) => (
-                    <div className="flex h-16 w-16">
+                    <div className="flex h-14 w-14 rounded-full">
                         <Link
                             href={i.link}
                             target="_blank"
                             className="m-auto flex cursor-pointer rounded-full p-2 hover:h-16 hover:w-16"
                         >
-                            <div className="relative m-auto h-8 w-8 duration-200">
+                            <div className="relative m-auto h-10 w-10 overflow-hidden rounded-full border-2 border-white/50 bg-white/20 duration-200">
                                 <Image
                                     src={`/${i.name}.svg`}
                                     alt=""

@@ -24,11 +24,11 @@ export function Skills(props: SkillsProps) {
 
     return (
         <section
-            className="mb-16 mt-48 flex w-full flex-col items-center pb-32"
+            className="container mb-16 mt-48 flex w-full flex-col items-center pb-32"
             about="skills"
             id="skills"
         >
-            <h3 className="mb-12 w-full py-3 text-center text-3xl font-bold lg:text-4xl">
+            <h3 className="mb-12 w-full rounded-xl bg-secondary py-3 text-center text-3xl font-bold lg:text-4xl">
                 Skills
             </h3>
             {props.skills.length > 0 ? (
@@ -62,6 +62,165 @@ export function Skills(props: SkillsProps) {
                     </p>
                 </div>
             )}
+            <div className="mt-40 flex flex-col">
+                <h3 className="mb-16 text-center text-5xl font-bold">
+                    Language Skills
+                </h3>
+                <div className="mb-32 grid grid-cols-4 place-content-center gap-2 md:gap-4 lg:grid-cols-6 xl:gap-8">
+                    {[
+                        "java",
+                        "javascript",
+                        "typescript",
+                        "c",
+                        "cpp",
+                        "python",
+                        "dartlang",
+                        "golang",
+                        "rust",
+                        "kotlin",
+                    ].map((i) => (
+                        <span className="relative mb-12 flex size-24 flex-col items-center justify-center rounded-xl p-4">
+                            {" "}
+                            <Image
+                                src={`/${i}.svg`}
+                                alt=""
+                                fill
+                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                            />{" "}
+                            <p className="absolute -bottom-8 text-nowrap text-center text-lg">
+                                {i}
+                            </p>
+                        </span>
+                    ))}
+                </div>
+                <h3 className="mb-16 text-center text-5xl font-bold">
+                    Frameworks
+                </h3>
+                <div className="mb-32 grid grid-cols-4 place-content-center gap-2 md:gap-4 lg:grid-cols-6 xl:gap-8">
+                    {[
+                        "react",
+                        "next-js",
+                        "aws",
+                        "nodejs",
+                        "svelte",
+                        "vite",
+                        "polygon",
+                        "cargo",
+                        "django",
+                        "gingonic",
+                        "flask",
+                        "astro",
+                        "flutter",
+                    ].map((i) => (
+                        <span className="relative mb-12 flex size-24 flex-col items-center justify-center rounded-xl p-4">
+                            {" "}
+                            <Image
+                                src={`/${i}.svg`}
+                                alt=""
+                                fill
+                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                            />{" "}
+                            <p className="absolute -bottom-8 text-nowrap text-center text-lg">
+                                {i}
+                            </p>
+                        </span>
+                    ))}
+                </div>
+                <h3 className="mb-16 text-center text-5xl font-bold">
+                    Operating Systems
+                </h3>
+                <div className="mb-32 grid grid-cols-4 place-content-center gap-2 md:gap-4 lg:grid-cols-6 xl:gap-8">
+                    {[
+                        "windows",
+                        "linux",
+                        "apple",
+                        "ubuntu",
+                        "arch",
+                        "kali",
+                        "redhat",
+                        "fedora",
+                    ].map((i) => (
+                        <span className="relative mb-12 flex size-24 flex-col items-center justify-center rounded-xl p-4">
+                            {" "}
+                            <Image
+                                src={`/${i}.svg`}
+                                alt=""
+                                fill
+                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                            />{" "}
+                            <p className="absolute -bottom-8 text-nowrap text-center text-lg">
+                                {i}
+                            </p>
+                        </span>
+                    ))}
+                </div>
+                <h3 className="mb-16 text-center text-5xl font-bold">
+                    Database
+                </h3>
+                <div className="mb-32 grid grid-cols-4 place-content-center gap-2 md:gap-4 lg:grid-cols-6 xl:gap-8">
+                    {[
+                        "postgresql",
+                        "mysql",
+                        "mongodb",
+                        "graphql",
+                        "supabase",
+                        "neondb",
+                        "planetscale",
+                        "chroma",
+                    ].map((i) => (
+                        <span className="relative mb-12 flex size-24 flex-col items-center justify-center rounded-xl p-4">
+                            {" "}
+                            <Image
+                                src={`/${i}.svg`}
+                                alt=""
+                                fill
+                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                            />{" "}
+                            <p className="absolute -bottom-8 text-nowrap text-center text-lg">
+                                {i}
+                            </p>
+                        </span>
+                    ))}
+                </div>
+                <h3 className="mb-16 text-center text-5xl font-bold">
+                    Tools and Softwares
+                </h3>
+                <div className="grid grid-cols-4 place-content-center gap-2 md:gap-4 lg:grid-cols-6 xl:gap-8">
+                    {[
+                        "vscode",
+                        "visual-studio",
+                        "android-studio",
+                        "jetbrains",
+                        "eclipse",
+                        "neovim",
+                        "bitcoin",
+                        "blender",
+                        "slack",
+                        "gitlab",
+                        "bitbucket",
+                        "replit",
+                        "figma",
+                        "docker",
+                        "aws",
+                        "postman",
+                        "kafka",
+                        "grafana",
+                    ].map((i) => (
+                        <span className="relative mb-12 flex size-24 flex-col items-center justify-center rounded-xl p-4">
+                            {" "}
+                            <Image
+                                src={`/${i}.svg`}
+                                alt=""
+                                fill
+                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                            />{" "}
+                            <p className="absolute -bottom-8 text-nowrap text-center text-lg">
+                                {i}
+                            </p>
+                        </span>
+                    ))}
+                </div>
+            </div>
         </section>
     )
 }
