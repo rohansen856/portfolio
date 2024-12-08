@@ -20,7 +20,7 @@ import { buttonVariants } from "../ui/button"
 
 const projects = [
     {
-        kind: "Large Scale Integrations",
+        kind: "Large Scale Projects",
         details: [
             {
                 image: "/projects/campusorbit.png",
@@ -35,10 +35,28 @@ const projects = [
                     "Auth0",
                     "PostgreSQL",
                 ],
-                description:
-                    "A freelance project made for ZEALTECH, a media marketing website. Made using nextjs and framer motion for advanced animations.",
+                description: "",
                 github: "https://github.com/rohansen856/digi-marketing",
                 live: "https://campusorbit.vercel.app",
+            },
+            {
+                image: "/projects/veil.png",
+                name: "Veil",
+                badges: [
+                    "team",
+                    "hackathon",
+                    "backend",
+                    "framer-motion",
+                    "nextjs",
+                    "rust",
+                    "flutter",
+                    "API",
+                    "Auth0",
+                    "PostgreSQL",
+                ],
+                description: "",
+                github: "https://github.com/ctrl-crew/veil",
+                live: "https://veil-org.vercel.app",
             },
         ],
     },
@@ -109,6 +127,62 @@ const projects = [
             },
         ],
     },
+    {
+        kind: "Backend Projects",
+        details: [
+            {
+                image: "/projects/rust-backend.png",
+                name: "Fullscale Rust Backend",
+                badges: [
+                    "backend",
+                    "rustlang",
+                    "actix-web",
+                    "API",
+                    "PostgreSQL",
+                ],
+                description: "",
+                github: "https://github.com/rohansen856/rust_postgres",
+                live: null,
+            },
+            {
+                image: "/projects/rust-crud.png",
+                name: "Rust CRUD API",
+                badges: [
+                    "backend",
+                    "rustlang",
+                    "actix-web",
+                    "CRUD API",
+                    "PostgreSQL",
+                ],
+                description: "",
+                github: "https://github.com/rohansen856/rust-crud-api",
+                live: null,
+            },
+            {
+                image: "/projects/rust-mongo.png",
+                name: "Rust Mongo Boilerplate",
+                badges: [
+                    "backend",
+                    "rustlang",
+                    "actix-web",
+                    "CRUD API",
+                    "MongoDB",
+                    "NoSQL",
+                ],
+                description: "",
+                github: "https://github.com/rohansen856/rust-mongo",
+                live: null,
+            },
+            {
+                image: "/projects/go-blockchain.png",
+                name: "Smart Contract inGoLang",
+                badges: ["backend", "golang", "Smart Contract", "Blockchain"],
+                description: "",
+                github: "https://github.com/rohansen856/go-blockchain",
+                live: null,
+            },
+        ],
+    },
 ]
 
 export function Projects() {
@@ -120,6 +194,9 @@ export function Projects() {
         >
             <h3 className="mb-12 w-full rounded-xl bg-secondary py-3 text-center text-3xl font-bold lg:text-4xl">
                 Projects
+            </h3>
+            <h3 className="mb-8 text-center text-5xl font-bold">
+                Flagship Projects
             </h3>
             <BentoGrid className="mx-auto my-16 max-w-4xl md:auto-rows-[20rem]">
                 {items.map((item, i) => (
@@ -133,73 +210,76 @@ export function Projects() {
                     />
                 ))}
             </BentoGrid>
-            <div className="mt-20 space-y-8">
-                {projects.map(({ kind, details }) => (
-                    <>
-                        <h3 className="mb-8 text-center text-5xl font-bold">
-                            {kind}
-                        </h3>
-                        {details.map((i) => (
-                            <div className="flex w-full gap-16 overflow-hidden rounded-xl border bg-secondary/50">
-                                <div className="relative h-[250px] w-[500px]">
-                                    <Image src={i.image} alt="" fill />
+            {projects.map(({ kind, details }) => (
+                <div className="mt-20 space-y-8">
+                    <h3 className="mb-8 text-center text-5xl font-bold">
+                        {kind}
+                    </h3>
+                    {details.map((i) => (
+                        <div className="flex w-full flex-col gap-16 overflow-hidden rounded-xl border bg-secondary/50 md:flex-row">
+                            <div className="relative h-[250px] w-full md:w-[500px]">
+                                <Image
+                                    src={i.image}
+                                    alt=""
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                            <div className="flex h-full flex-1 flex-col p-4">
+                                <h4 className="mb-1 text-3xl font-bold">
+                                    {i.name}
+                                </h4>
+                                <div className="mb-4 space-x-1">
+                                    {i.badges.map((j) => (
+                                        <Badge
+                                            variant={"outline"}
+                                            className="border-purple-600 bg-purple-600/20"
+                                        >
+                                            {j}
+                                        </Badge>
+                                    ))}
                                 </div>
-                                <div className="flex h-full flex-1 flex-col py-4">
-                                    <h4 className="mb-1 text-3xl font-bold">
-                                        {i.name}
-                                    </h4>
-                                    <div className="mb-4 space-x-1">
-                                        {i.badges.map((j) => (
-                                            <Badge
-                                                variant={"outline"}
-                                                className="border-purple-600 bg-purple-600/20"
-                                            >
-                                                {j}
-                                            </Badge>
-                                        ))}
-                                    </div>
-                                    <p className="pr-8">{i.description}</p>
-                                    <div className="mt-12 flex">
-                                        {i.github && (
-                                            <Link
-                                                href={i.github}
-                                                className={cn(
-                                                    buttonVariants(),
-                                                    "mr-4 gap-6 rounded text-lg"
-                                                )}
-                                            >
-                                                <Image
-                                                    src={"/github.svg"}
-                                                    alt=""
-                                                    height={50}
-                                                    width={50}
-                                                />
-                                                Github
-                                            </Link>
-                                        )}
-                                        {i.live && (
-                                            <Link
-                                                href={i.live}
-                                                className={cn(
-                                                    buttonVariants({
-                                                        variant: "outline",
-                                                    }),
-                                                    "mr-8 gap-4 rounded border-2 text-lg"
-                                                )}
-                                            >
-                                                <span className="flex size-4 items-center justify-center rounded-full border-2 border-green-600 p-px">
-                                                    <span className="size-full rounded-full bg-green-600" />
-                                                </span>
-                                                Live
-                                            </Link>
-                                        )}
-                                    </div>
+                                <p className="pr-8">{i.description}</p>
+                                <div className="mt-12 flex">
+                                    {i.github && (
+                                        <Link
+                                            href={i.github}
+                                            className={cn(
+                                                buttonVariants(),
+                                                "mr-4 gap-6 rounded text-lg"
+                                            )}
+                                        >
+                                            <Image
+                                                src={"/github.svg"}
+                                                alt=""
+                                                height={50}
+                                                width={50}
+                                            />
+                                            Github
+                                        </Link>
+                                    )}
+                                    {i.live && (
+                                        <Link
+                                            href={i.live}
+                                            className={cn(
+                                                buttonVariants({
+                                                    variant: "outline",
+                                                }),
+                                                "mr-8 gap-4 rounded border-2 text-lg"
+                                            )}
+                                        >
+                                            <span className="flex size-4 items-center justify-center rounded-full border-2 border-green-600 p-px">
+                                                <span className="size-full rounded-full bg-green-600" />
+                                            </span>
+                                            Live
+                                        </Link>
+                                    )}
                                 </div>
                             </div>
-                        ))}
-                    </>
-                ))}
-            </div>
+                        </div>
+                    ))}
+                </div>
+            ))}
         </section>
     )
 }
