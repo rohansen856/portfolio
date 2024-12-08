@@ -24,7 +24,7 @@ export function Skills(props: SkillsProps) {
 
     return (
         <section
-            className="container mb-16 mt-48 flex w-full flex-col items-center pb-32"
+            className="container mb-16 mt-20 flex w-full flex-col items-center pb-32"
             about="skills"
             id="skills"
         >

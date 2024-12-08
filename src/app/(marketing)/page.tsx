@@ -1,4 +1,5 @@
 import { Current } from "@/components/profile/current-1"
+import { Experience } from "@/components/profile/experience-1"
 import { Home } from "@/components/profile/home-1"
 import { Profiles } from "@/components/profile/profiles-1"
 import { Projects } from "@/components/profile/projects-1"
@@ -19,6 +20,7 @@ export default async function ProfilePage() {
                 />
                 <Current />
                 <Timeline />
+                <Experience />
                 <Skills
                     skills={[
                         "typescript",
