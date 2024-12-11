@@ -35,7 +35,8 @@ const projects = [
                     "Auth0",
                     "PostgreSQL",
                 ],
-                description: "",
+                description:
+                    "A robust NextJS application made with UX as primary concern. Made for the students of IIITDMJ for miscellaneous puposes like schedule management, club activity tracking, Mess food review etc.",
                 github: "https://github.com/rohansen856/digi-marketing",
                 live: "https://campusorbit.vercel.app",
             },
@@ -54,7 +55,8 @@ const projects = [
                     "Auth0",
                     "PostgreSQL",
                 ],
-                description: "",
+                description:
+                    "A project made in the MLH hackathon HackCBS. A web3 based medical help app, where you can book appointments, Manage your medical records, Get prescriptions from verified medical officers and much more. All built on the Ethereum On Chain Network!",
                 github: "https://github.com/ctrl-crew/veil",
                 live: "https://veil-org.vercel.app",
             },
@@ -63,6 +65,22 @@ const projects = [
     {
         kind: "Freelance/UI Projects",
         details: [
+            {
+                image: "/projects/portfolio.png",
+                name: "Zealtech",
+                badges: [
+                    "personal",
+                    "portfolio",
+                    "framer-motion",
+                    "nextjs",
+                    "UI",
+                    "UX",
+                ],
+                description:
+                    "My portfolio website made using NextJS with the primary focus on UI, readability and User Experience",
+                github: "https://github.com/rohansen856/portfolio",
+                live: "https://rcsen.vercel.app",
+            },
             {
                 image: "/projects/zealtech.png",
                 name: "Zealtech",
@@ -76,7 +94,8 @@ const projects = [
                 image: "/projects/bettermindlabs.png",
                 name: "BettermindLabs",
                 badges: ["freelance", "framer-motion", "nextjs", "UI", "UX"],
-                description: "",
+                description:
+                    "A professional site made for the bettermindlabs organization for advertising courses like AI/ML bootcamp, App Development bootcamp etc.",
                 github: "https://github.com/rohansen856/tech-tank",
                 live: "https://finance-dost.vercel.app",
             },
@@ -91,7 +110,8 @@ const projects = [
                     "UI",
                     "UX",
                 ],
-                description: "",
+                description:
+                    "A personal site made to showcase my lovely teammates who are with me throughout my team hackathons and team projects. This project is my appreciation towards them.",
                 github: "https://github.com/rohansen856/tech-tank",
                 live: "https://ctrl-crew.vercel.app",
             },
@@ -105,7 +125,8 @@ const projects = [
                     "nextjs",
                     "mysql",
                 ],
-                description: "",
+                description:
+                    "A Project made under the Academic DBMS'24 Assignment as a part of my degree course. A simple law and legal website to publish and read articles about various legal incidents along with a shocase of all the Constitutions under the Indian Penal Code.",
                 github: "https://github.com/rohansen856/lawhelp",
                 live: "https://lawhelp.vercel.app",
             },
@@ -113,7 +134,8 @@ const projects = [
                 image: "/projects/visionai.png",
                 name: "Vision AI",
                 badges: ["freelance", "ai", "framer-motion", "vitejs"],
-                description: "",
+                description:
+                    "Another example of my freelance work for the Vision AI team. A website made with React (Vite) with the primary interest in User Interface and Experience.",
                 github: "https://github.com/rohansen856/ui-package",
                 live: "https://ui-package.vercel.app",
             },
@@ -121,7 +143,8 @@ const projects = [
                 image: "/projects/jobify.png",
                 name: "Job Portal",
                 badges: ["freelance", "job-search", "framer-motion", "nextjs"],
-                description: "",
+                description:
+                    "A job listing cum finding website for both organizations and people in need.",
                 github: "https://github.com/rohansen856/job-portal",
                 live: "https://home-job-portal.vercel.app/",
             },
@@ -140,7 +163,8 @@ const projects = [
                     "API",
                     "PostgreSQL",
                 ],
-                description: "",
+                description:
+                    "A fully functional backend made in thr Rust language. Utilizing the ultimate type safety features and insane Execution speed of the rust language to spin up a fast and reliable backend service.",
                 github: "https://github.com/rohansen856/rust_postgres",
                 live: null,
             },
@@ -154,7 +178,8 @@ const projects = [
                     "CRUD API",
                     "PostgreSQL",
                 ],
-                description: "",
+                description:
+                    "A Create Read Update Delete API made using rust and PostgreSQL.",
                 github: "https://github.com/rohansen856/rust-crud-api",
                 live: null,
             },
@@ -169,16 +194,58 @@ const projects = [
                     "MongoDB",
                     "NoSQL",
                 ],
-                description: "",
+                description:
+                    "Implementation of a database connector and API with mongoDB as the database provider to utilize the power of NoSQL database with one of the most type and thread safe languages",
                 github: "https://github.com/rohansen856/rust-mongo",
                 live: null,
             },
             {
                 image: "/projects/go-blockchain.png",
-                name: "Smart Contract inGoLang",
+                name: "Smart Contract in GoLang",
                 badges: ["backend", "golang", "Smart Contract", "Blockchain"],
-                description: "",
+                description:
+                    "Blockchain contracts written using the Go Language for faster builds and reliable code.",
                 github: "https://github.com/rohansen856/go-blockchain",
+                live: null,
+            },
+        ],
+    },
+    {
+        kind: "Microservices and Cloud Projects",
+        details: [
+            {
+                image: "/projects/rust-kafka.png",
+                name: "Rust Kafka implementation",
+                badges: [
+                    "backend",
+                    "rust",
+                    "kafka",
+                    "queue",
+                    "microservices",
+                    "zookeeper",
+                ],
+                description:
+                    "Implementation of the Kafka Queuing service in Rust Lang. Bootstrapped with zookeper for a 100% self sufficient service",
+                github: "https://github.com/rohansen856/rust-kafka",
+                live: null,
+            },
+            {
+                image: "/projects/rust-microservices.png",
+                name: "Rust Microservices Architecture",
+                badges: [
+                    "backend",
+                    "rust",
+                    "kafka",
+                    "queue",
+                    "microservices",
+                    "microservices",
+                    "load balancer",
+                    "rate limiter",
+                    "zookeeper",
+                ],
+                description:
+                    "Implementation of microservices architecture with 2 servers utilizing postgres connectivity and kafka, a load balancer, a rate limiter and prometheus analytics with grafana visualization.",
+                github: "https://github.com/rohansen856/rust-microservices",
                 live: null,
             },
         ],
@@ -211,13 +278,16 @@ export function Projects() {
                 ))}
             </BentoGrid>
             {projects.map(({ kind, details }) => (
-                <div className="mt-20 space-y-8">
+                <div key={kind} className="mt-20 space-y-8">
                     <h3 className="mb-8 text-center text-5xl font-bold">
                         {kind}
                     </h3>
                     {details.map((i) => (
-                        <div className="flex w-full flex-col gap-16 overflow-hidden rounded-xl border bg-secondary/50 md:flex-row">
-                            <div className="relative h-[250px] w-full md:w-[500px]">
+                        <div
+                            key={i.name}
+                            className="flex w-full flex-col gap-16 overflow-hidden rounded-xl border bg-secondary/50 md:flex-row"
+                        >
+                            <div className="relative h-[320px] w-full md:w-[500px]">
                                 <Image
                                     src={i.image}
                                     alt=""
@@ -232,6 +302,7 @@ export function Projects() {
                                 <div className="mb-4 space-x-1">
                                     {i.badges.map((j) => (
                                         <Badge
+                                            key={j}
                                             variant={"outline"}
                                             className="border-purple-600 bg-purple-600/20"
                                         >

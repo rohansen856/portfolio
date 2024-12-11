@@ -1,3 +1,4 @@
+import { Achievements } from "@/components/profile/achievements-1"
 import { Current } from "@/components/profile/current-1"
 import { Experience } from "@/components/profile/experience-1"
 import { Home } from "@/components/profile/home-1"
@@ -21,19 +22,8 @@ export default async function ProfilePage() {
                 <Current />
                 <Timeline />
                 <Experience />
-                <Skills
-                    skills={[
-                        "typescript",
-                        "blender",
-                        "dartlang",
-                        "react",
-                        "cpp",
-                        "figma",
-                        "next-js",
-                        "flutter",
-                        "docker",
-                    ]}
-                />
+                <Achievements />
+                <Skills />
                 <Projects />
                 <Profiles />
                 <Test />

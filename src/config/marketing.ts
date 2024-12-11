@@ -11,6 +11,14 @@ export const marketingConfig: MarketingConfig = {
             href: "/#timeline",
         },
         {
+            title: "Experience",
+            href: "/#experience",
+        },
+        {
+            title: "Achievements",
+            href: "/#achievements",
+        },
+        {
             title: "Skills",
             href: "/#skills",
         },
