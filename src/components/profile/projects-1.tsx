@@ -255,7 +255,7 @@ const projects = [
 export function Projects() {
     return (
         <section
-            className="container relative mb-16 mt-6 w-full"
+            className="container relative mb-16 w-full"
             about="projects"
             id="projects"
         >

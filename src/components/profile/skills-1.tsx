@@ -1,13 +1,5 @@
 import Image from "next/image"
 
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip"
-import { CircularBg } from "@/components/circle-background"
-
 export function Skills() {
     const allSkills = [
         "typescript",
@@ -31,7 +23,7 @@ export function Skills() {
 
     return (
         <section
-            className="container mb-16 mt-20 flex w-full flex-col items-center pb-32"
+            className="container mt-20 flex w-full flex-col items-center"
             about="skills"
             id="skills"
         >
@@ -39,10 +31,22 @@ export function Skills() {
                 Skills
             </h3>
             <div className="mt-12 flex flex-col">
-                <h3 className="mb-16 text-center text-5xl font-bold">
+                <h3 className="mb-16 flex items-center justify-center gap-4 border-b-2 pb-2 text-center text-5xl font-bold">
+                    <Image
+                        src={"/skills/language.svg"}
+                        alt=""
+                        height={50}
+                        width={50}
+                    />
                     Language Skills
                 </h3>
-                <div className="mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                <div className="relative mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                    <Image
+                        src={"/skills/language.svg"}
+                        alt=""
+                        fill
+                        className="object-contain opacity-30"
+                    />
                     {[
                         "java",
                         "javascript",
@@ -69,10 +73,22 @@ export function Skills() {
                         </span>
                     ))}
                 </div>
-                <h3 className="mb-16 text-center text-5xl font-bold">
+                <h3 className="mb-16 flex items-center justify-center gap-4 border-b-2 pb-2 text-center text-5xl font-bold">
+                    <Image
+                        src={"/skills/framework.svg"}
+                        alt=""
+                        height={50}
+                        width={50}
+                    />
                     Frameworks
                 </h3>
-                <div className="mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                <div className="relative mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                    <Image
+                        src={"/skills/framework.svg"}
+                        alt=""
+                        fill
+                        className="object-contain opacity-30"
+                    />
                     {[
                         "react",
                         "next-js",
@@ -102,10 +118,22 @@ export function Skills() {
                         </span>
                     ))}
                 </div>
-                <h3 className="mb-16 text-center text-5xl font-bold">
+                <h3 className="mb-16 flex items-center justify-center gap-4 border-b-2 pb-2 text-center text-5xl font-bold">
+                    <Image
+                        src={"/skills/operating-system.svg"}
+                        alt=""
+                        height={50}
+                        width={50}
+                    />
                     Operating Systems
                 </h3>
-                <div className="mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                <div className="relative mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                    <Image
+                        src={"/skills/operating-system.svg"}
+                        alt=""
+                        fill
+                        className="object-contain opacity-30"
+                    />
                     {[
                         "windows",
                         "linux",
@@ -130,10 +158,22 @@ export function Skills() {
                         </span>
                     ))}
                 </div>
-                <h3 className="mb-16 text-center text-5xl font-bold">
+                <h3 className="mb-16 flex items-center justify-center gap-4 border-b-2 pb-2 text-center text-5xl font-bold">
+                    <Image
+                        src={"/skills/database.svg"}
+                        alt=""
+                        height={50}
+                        width={50}
+                    />
                     Database
                 </h3>
-                <div className="mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                <div className="relative mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                    <Image
+                        src={"/skills/database.svg"}
+                        alt=""
+                        fill
+                        className="object-contain opacity-30"
+                    />
                     {[
                         "postgresql",
                         "mysql",
@@ -158,10 +198,22 @@ export function Skills() {
                         </span>
                     ))}
                 </div>
-                <h3 className="mb-16 text-center text-5xl font-bold">
+                <h3 className="mb-16 flex items-center justify-center gap-4 border-b-2 pb-2 text-center text-5xl font-bold">
+                    <Image
+                        src={"/skills/tools.svg"}
+                        alt=""
+                        height={50}
+                        width={50}
+                    />
                     Tools and Softwares
                 </h3>
-                <div className="grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                <div className="relative mb-32 grid grid-cols-4 place-content-center gap-4 md:gap-8 lg:grid-cols-6 xl:gap-x-16">
+                    <Image
+                        src={"/skills/tools.svg"}
+                        alt=""
+                        fill
+                        className="object-contain opacity-30"
+                    />{" "}
                     {[
                         "vscode",
                         "visual-studio",
