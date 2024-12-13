@@ -15,10 +15,10 @@ export async function Achievements() {
                 "Cost optimization and security best practices",
             ],
             certificates: [
-                {
-                    title: "View Certificate",
-                    url: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop",
-                },
+                // {
+                //     title: "View Certificate",
+                //     url: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop",
+                // },
             ],
         },
         {
@@ -34,14 +34,14 @@ export async function Achievements() {
                 "Performance optimization strategies",
             ],
             certificates: [
-                {
-                    title: "Professional Certificate",
-                    url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
-                },
-                {
-                    title: "Associate Certificate",
-                    url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
-                },
+                // {
+                //     title: "Professional Certificate",
+                //     url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
+                // },
+                // {
+                //     title: "Associate Certificate",
+                //     url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
+                // },
             ],
         },
         {
@@ -56,14 +56,14 @@ export async function Achievements() {
                 "Performance optimization strategies",
             ],
             certificates: [
-                {
-                    title: "Professional Certificate",
-                    url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
-                },
-                {
-                    title: "Associate Certificate",
-                    url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
-                },
+                // {
+                //     title: "Professional Certificate",
+                //     url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
+                // },
+                // {
+                //     title: "Associate Certificate",
+                //     url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
+                // },
             ],
         },
         {
@@ -86,14 +86,14 @@ export async function Achievements() {
                 "Performance optimization strategies",
             ],
             certificates: [
-                {
-                    title: "Professional Certificate",
-                    url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
-                },
-                {
-                    title: "Associate Certificate",
-                    url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
-                },
+                // {
+                //     title: "Professional Certificate",
+                //     url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
+                // },
+                // {
+                //     title: "Associate Certificate",
+                //     url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
+                // },
             ],
         },
         {
@@ -109,14 +109,14 @@ export async function Achievements() {
                 "Performance optimization strategies",
             ],
             certificates: [
-                {
-                    title: "Professional Certificate",
-                    url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
-                },
-                {
-                    title: "Associate Certificate",
-                    url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
-                },
+                // {
+                //     title: "Professional Certificate",
+                //     url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
+                // },
+                // {
+                //     title: "Associate Certificate",
+                //     url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
+                // },
             ],
         },
     ]

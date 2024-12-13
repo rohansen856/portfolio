@@ -65,7 +65,7 @@ export function Skills() {
                                 src={`/skills/${i}.svg`}
                                 alt=""
                                 fill
-                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                                className="overflow-hidden rounded-xl border bg-secondary object-contain p-4"
                             />{" "}
                             <p className="absolute -bottom-8 text-nowrap text-center text-lg">
                                 {i}
@@ -110,7 +110,7 @@ export function Skills() {
                                 src={`/skills/${i}.svg`}
                                 alt=""
                                 fill
-                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                                className="overflow-hidden rounded-xl border bg-secondary object-contain p-4"
                             />{" "}
                             <p className="absolute -bottom-8 text-nowrap text-center text-lg">
                                 {i}
@@ -150,7 +150,7 @@ export function Skills() {
                                 src={`/skills/${i}.svg`}
                                 alt=""
                                 fill
-                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                                className="overflow-hidden rounded-xl border bg-secondary object-contain p-4"
                             />{" "}
                             <p className="absolute -bottom-8 text-nowrap text-center text-lg">
                                 {i}
@@ -190,7 +190,7 @@ export function Skills() {
                                 src={`/skills/${i}.svg`}
                                 alt=""
                                 fill
-                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                                className="overflow-hidden rounded-xl border bg-secondary object-contain p-4"
                             />{" "}
                             <p className="absolute -bottom-8 text-nowrap text-center text-lg">
                                 {i}
@@ -240,7 +240,7 @@ export function Skills() {
                                 src={`/skills/${i}.svg`}
                                 alt=""
                                 fill
-                                className="overflow-hidden rounded-xl bg-secondary object-contain p-4"
+                                className="overflow-hidden rounded-xl border bg-secondary object-contain p-4"
                             />{" "}
                             <p className="absolute -bottom-8 text-nowrap text-center text-lg">
                                 {i}

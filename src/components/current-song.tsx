@@ -20,21 +20,21 @@ import { Button } from "@/components/ui/button"
 export function CurrentSong() {
     const router = useRouter()
     const [isPlaying, setPlaying] = useState<boolean>(false)
-    const audioRef = useRef<HTMLAudioElement>(null)
+    const audioRef = useRef<HTMLAudioElement>(new Audio())
 
     const handlePlayPause = () => {
-        // if (!audioRef.current) return
-        // if (isPlaying) {
-        //     audioRef.current.pause()
-        //     setPlaying(false)
-        //     return
-        // }
+        if (!audioRef.current) return
+        if (isPlaying) {
+            audioRef.current.pause()
+            setPlaying(false)
+            return
+        }
 
-        // audioRef.current.play()
+        audioRef.current.play()
         setPlaying(true)
-        return router.push(
-            "https://open.spotify.com/track/0GWNtMohuYUEHVZ40tcnHF?si=J0vzmTVyQU2ZfrkmoJCbeg"
-        )
+        // return router.push(
+        //     "https://open.spotify.com/track/0GWNtMohuYUEHVZ40tcnHF?si=J0vzmTVyQU2ZfrkmoJCbeg"
+        // )
     }
     return (
         <div
@@ -57,8 +57,8 @@ export function CurrentSong() {
                         />
                     </div>
                     <div className="h-full w-16 flex-1">
-                        <h3 className="text-lg font-bold">Specializ</h3>
-                        <h3 className="text-xs">by King Gnu</h3>
+                        <h3 className="text-lg font-bold">About me</h3>
+                        <h3 className="text-xs">by AI</h3>
                     </div>
                 </div>
                 <div className="flex h-16 w-full items-center gap-2 rounded-sm p-1">
@@ -99,8 +99,14 @@ export function CurrentSong() {
                             ))}
                         </div>
                     ) : (
-                        <p className="opacity-75">Listen to my recent song</p>
+                        <p className="opacity-75">Listen all about me!</p>
                     )}
+                    <audio
+                        ref={audioRef}
+                        src="https://utfs.io/f/96GOcDjysAigTjm4s97b67IngwMilacpjBNtF8uQfqOZVYkh"
+                        className="hidden"
+                        preload="none"
+                    />
                 </div>
             </div>
         </div>

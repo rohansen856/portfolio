@@ -228,7 +228,13 @@ export function Timeline() {
                         or anything you have in mind. Let&apos;s work together
                         and create something great !!
                     </p>
-                    <Link className="w-full" href={"/"}>
+                    <Link
+                        className="w-full"
+                        href={
+                            "https://utfs.io/f/96GOcDjysAigPWEvE4ccYX4sKAgfVumLWv5xBRoTeFlb37y2"
+                        }
+                        target="_blank"
+                    >
                         <RainbowButton className="w-2/3 rounded">
                             Resume
                         </RainbowButton>
