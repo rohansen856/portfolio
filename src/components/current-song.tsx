@@ -20,7 +20,7 @@ import { Button } from "@/components/ui/button"
 export function CurrentSong() {
     const router = useRouter()
     const [isPlaying, setPlaying] = useState<boolean>(false)
-    const audioRef = useRef<HTMLAudioElement>(new Audio())
+    const audioRef = useRef<HTMLAudioElement | null>(null)
 
     const handlePlayPause = () => {
         if (!audioRef.current) return
