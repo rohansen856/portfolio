@@ -58,7 +58,7 @@ const projects = [
                 description:
                     "A project made in the MLH hackathon HackCBS. A web3 based medical help app, where you can book appointments, Manage your medical records, Get prescriptions from verified medical officers and much more. All built on the Ethereum On Chain Network!",
                 github: "https://github.com/ctrl-crew/veil",
-                live: "https://veil-org.vercel.app",
+                live: "https://veil-app.vercel.app",
             },
         ],
     },
@@ -89,6 +89,23 @@ const projects = [
                     "A freelance project made for ZEALTECH, a media marketing website. Made using nextjs and framer motion for advanced animations.",
                 github: "https://github.com/rohansen856/digi-marketing",
                 live: "https://zealtech.vercel.app",
+            },
+
+            {
+                image: "/projects/win95.png",
+                name: "Zealtech",
+                badges: [
+                    "personal",
+                    "portfolio",
+                    "framer-motion",
+                    "nextjs",
+                    "UI",
+                    "UX",
+                ],
+                description:
+                    "My portfolio website made using NextJS with the primary focus on UI, readability and User Experience",
+                github: "https://github.com/rohansen856/win95",
+                live: "https://rcsen.vercel.app",
             },
             {
                 image: "/projects/bettermindlabs.png",
@@ -255,6 +272,21 @@ const projects = [
                 description:
                     "Implementation of microservices architecture with 2 servers utilizing postgres connectivity and kafka, a load balancer, a rate limiter and prometheus analytics with grafana visualization.",
                 github: "https://github.com/rohansen856/rust-microservices",
+                live: null,
+            },
+            {
+                image: "/projects/rust-threading.png",
+                name: "Multithreading basics in Rust",
+                badges: [
+                    "threading",
+                    "rust",
+                    "multithreading",
+                    "multiprocessing",
+                    "parallelism",
+                ],
+                description:
+                    "Implementation of microservices architecture with 2 servers utilizing postgres connectivity and kafka, a load balancer, a rate limiter and prometheus analytics with grafana visualization.",
+                github: "https://github.com/rohansen856/rust_threading",
                 live: null,
             },
         ],
