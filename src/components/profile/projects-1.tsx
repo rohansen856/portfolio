@@ -230,6 +230,15 @@ const projects = [
                 live: null,
             },
             {
+                image: "/projects/rust-grpc.png",
+                name: "gRPC protocol written in rust",
+                badges: ["backend", "rust", "gRPC", "HTTP/2", "networking"],
+                description:
+                    "Implementation of the Kafka Queuing service in Rust Lang. Bootstrapped with zookeper for a 100% self sufficient service",
+                github: "https://github.com/rohansen856/gRPC_rust",
+                live: null,
+            },
+            {
                 image: "/projects/rust-microservices.png",
                 name: "Rust Microservices Architecture",
                 badges: [
@@ -314,6 +323,7 @@ export function Projects() {
                                 <div className="mt-12 flex">
                                     {i.github && (
                                         <Link
+                                            target="_blank"
                                             href={i.github}
                                             className={cn(
                                                 buttonVariants(),
@@ -331,6 +341,7 @@ export function Projects() {
                                     )}
                                     {i.live && (
                                         <Link
+                                            target="_blank"
                                             href={i.live}
                                             className={cn(
                                                 buttonVariants({
