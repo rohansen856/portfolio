@@ -3,7 +3,7 @@ import { SiteConfig } from "types"
 export const siteConfig: SiteConfig = {
     name: "Rohan Sen",
     description:
-        "An open source application built using the new router, server components and everything new in Next.js 13.",
+        "Open souurce enthusiast with extensive knowledge in web development, cloud computing, and blockchain technologies.",
     url: "https://rcsen.vercel.app",
     ogImage: "https://rcsen.vercel.app/og.jpg",
     links: {
