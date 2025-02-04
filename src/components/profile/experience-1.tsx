@@ -15,6 +15,36 @@ export async function Experience() {
             color: "teal",
         },
         {
+            name: "Open Source Contributions",
+            position: "Open Source enthusiast",
+            timeline: "> 1 Year",
+            points: [
+                "More than 30 professional contributions in various open source projects",
+                "Contributed to multiple repositories in various professional organizations like CCExtractor, CORD, Zulip",
+            ],
+            color: "teal",
+        },
+        {
+            name: "Techkriti - IIT Kanpur",
+            position: "Dual hackathon winner",
+            timeline: "May 2024",
+            points: [
+                "2nd position in Re-Dev the flagship web development hackathon of IIT Kanpur among 100+ teams",
+                "2nd runners up in Cybersecurity contest CTF amoong 50+ other shortlisted teams",
+            ],
+            color: "teal",
+        },
+        {
+            name: "Kshitij - IIT Kharagpur",
+            position: "Dual hackathon winner",
+            timeline: "May 2024",
+            points: [
+                "1st position in Zero Trust, a 24 hour long cloud and blockchain hackathon among 100+ teams",
+                "One of the top positions in East india blockkchain summit, the largest blockchain hackathon in Eastern India",
+            ],
+            color: "teal",
+        },
+        {
             name: "GSSOC'24",
             position: "Open Source Developer",
             timeline: "March 2024 - May 2024",

@@ -45,6 +45,36 @@ export async function Achievements() {
             ],
         },
         {
+            title: "Kshitij'25 Dual track Winner",
+            date: "January 2025",
+            description:
+                "Dual win in Zero Trust and East India Blockchain Summit",
+            tags: [
+                "Cybersecurity",
+                "Hackathon",
+                "Cloud",
+                "Full Stack",
+                "Blockchain",
+                "DevOps",
+            ],
+            image: "/achievements/kshitij.png",
+            points: [
+                "Enterprise solution design and implementation",
+                "Security and compliance expertise",
+                "Performance optimization strategies",
+            ],
+            certificates: [
+                // {
+                //     title: "Professional Certificate",
+                //     url: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop",
+                // },
+                // {
+                //     title: "Associate Certificate",
+                //     url: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop",
+                // },
+            ],
+        },
+        {
             title: "BSOC'24 winner",
             date: "August 2024",
             description: "Placed 1st in 3 month long intra-college hackathon",
