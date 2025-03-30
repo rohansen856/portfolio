@@ -103,6 +103,8 @@ export function Skills() {
                         "flask",
                         "astro",
                         "flutter",
+                        "rocket",
+                        "actix",
                     ].map((i) => (
                         <span className="relative mb-12 flex size-16 flex-col items-center justify-center rounded-xl p-4">
                             {" "}

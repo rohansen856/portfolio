@@ -10,7 +10,8 @@ import { absoluteUrl, cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@/components/analytics"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider"
+
+// import { ThemeProvider } from "@/components/theme-provider"
 
 const fontSans = FontSans({
     subsets: ["latin"],
@@ -84,21 +85,15 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <head />
             <body
                 className={cn(
-                    "min-h-screen bg-background font-sans antialiased",
+                    "dark min-h-screen bg-background font-sans antialiased",
                     fontSans.variable,
                     fontHeading.variable
                 )}
             >
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="dark"
-                    enableSystem
-                >
-                    {children}
-                    <Analytics />
-                    <Toaster />
-                    <TailwindIndicator />
-                </ThemeProvider>
+                {children}
+                <Analytics />
+                <Toaster />
+                <TailwindIndicator />
             </body>
         </html>
     )

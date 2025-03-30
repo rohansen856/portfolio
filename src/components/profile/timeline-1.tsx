@@ -46,6 +46,18 @@ const timeline: QualificationProps[] = [
         place: "IIITDM Jabalpur",
         date: "2023",
     },
+    // {
+    //     serial: 7,
+    //     name: "Open Source journey",
+    //     place: "GSSOC'24",
+    //     date: "2024",
+    // },
+    // {
+    //     serial: 8,
+    //     name: "Programming club",
+    //     place: "Core member TPC, IIITDMJ",
+    //     date: "2024",
+    // },
 ]
 
 export function Timeline() {
