@@ -2,12 +2,19 @@
 
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
-import { Award, Calendar, ExternalLink } from "lucide-react"
+import { Award, Calendar, ChevronRight, ExternalLink } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 interface Achievement {
     title: string
@@ -16,89 +23,103 @@ interface Achievement {
     tags: string[]
     image: string
     points: string[]
-    certificates: {
-        title: string
-        url: string
-    }[]
+    url: string
 }
 
 export function AchievementCard({ achievement }: { achievement: Achievement }) {
-    const [isHovered, setIsHovered] = useState(false)
-
     return (
         <div className="group relative">
-            <div className="overflow-hidden rounded-xl border border-border bg-background/80 shadow-lg backdrop-blur-lg transition-all duration-300 hover:border-primary/50 hover:shadow-xl">
-                <div className="relative h-48 w-full">
+            <motion.div
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="overflow-hidden rounded-xl border border-border bg-background/80 shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-xl"
+            >
+                <div className="relative h-52 w-full overflow-hidden">
                     <Image
                         src={achievement.image}
                         alt={achievement.title}
                         fill
-                        className="object-cover"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+
+                    <div className="absolute right-4 top-4 rounded-full bg-background/90 px-3 py-1 backdrop-blur-sm">
+                        <div className="flex items-center gap-1 text-foreground">
+                            <Calendar className="h-3 w-3" />
+                            <span className="font-medium">
+                                {achievement.date}
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="p-6">
-                    <div className="mb-2 flex items-center gap-2 text-muted-foreground">
-                        <Calendar className="h-4 w-4" />
-                        <span className="text-sm">{achievement.date}</span>
-                    </div>
-
-                    <h3 className="mb-2 text-xl font-semibold">
+                    <h3 className="mb-3 text-2xl font-bold tracking-tight">
                         {achievement.title}
                     </h3>
 
-                    <p className="mb-4 min-h-12 text-muted-foreground">
+                    <p className="text-md mb-4 text-foreground">
                         {achievement.description}
                     </p>
 
-                    <div className="mb-4 flex flex-wrap gap-2">
-                        {achievement.tags.map((tag) => (
-                            <Badge key={tag} variant="secondary">
-                                {tag}
-                            </Badge>
-                        ))}
+                    <div className="mb-5 flex flex-wrap gap-2">
+                        {achievement.tags.map((tag) => {
+                            return (
+                                <Badge
+                                    key={tag}
+                                    className={`border-none font-medium`}
+                                >
+                                    {tag}
+                                </Badge>
+                            )
+                        })}
                     </div>
 
-                    <ul className="mb-4 space-y-2">
+                    <div className="mb-6 space-y-3">
                         {achievement.points.map((point, index) => (
-                            <motion.li
+                            <motion.div
                                 key={index}
-                                initial={{ opacity: 0, x: -20 }}
+                                initial={{ opacity: 0, x: -10 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                transition={{ delay: 1 + index * 0.1 }}
+                                transition={{ delay: 0.1 + index * 0.1 }}
                                 className="flex items-start gap-2"
                             >
-                                <Award className="mt-1 h-4 w-4 text-primary" />
-                                <span>{point}</span>
-                            </motion.li>
-                        ))}
-                    </ul>
-
-                    <div className="flex flex-wrap gap-2">
-                        {achievement.certificates.map((cert, index) => (
-                            <Dialog key={index}>
-                                <DialogTrigger asChild>
-                                    <Button variant="outline" size="sm">
-                                        <ExternalLink className="mr-2 h-4 w-4" />
-                                        {cert.title}
-                                    </Button>
-                                </DialogTrigger>
-                                <DialogContent className="max-w-4xl">
-                                    <div className="relative h-[80vh] w-full">
-                                        <Image
-                                            src={cert.url}
-                                            alt={cert.title}
-                                            fill
-                                            className="object-contain"
-                                        />
-                                    </div>
-                                </DialogContent>
-                            </Dialog>
+                                <Award className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                                <span className="text-sm">{point}</span>
+                            </motion.div>
                         ))}
                     </div>
+
+                    {/* Show credentials button */}
+                    <div className="flex justify-end">
+                        <TooltipProvider>
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Link
+                                        href={achievement.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            className="rounded-full px-4 text-xs font-medium transition-all hover:bg-primary hover:text-primary-foreground"
+                                        >
+                                            <span>Show Credentials</span>
+                                            <ChevronRight className="ml-1 h-3 w-3" />
+                                        </Button>
+                                    </Link>
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>View full credentials</p>
+                                </TooltipContent>
+                            </Tooltip>
+                        </TooltipProvider>
+                    </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
