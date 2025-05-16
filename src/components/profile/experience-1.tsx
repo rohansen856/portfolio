@@ -1,22 +1,52 @@
+import Image from "next/image"
 import { Globe } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
-export async function Experience() {
-    const experiences = [
+type ExperienceArrProps = {
+    name: string
+    position: string
+    start: Date
+    end: Date
+    timeline: string
+    points: string[]
+    color: string
+    logo?: string
+}[]
+
+export function Experience() {
+    const experiences: ExperienceArrProps = [
         {
             name: "BetterMindLabs",
             position: "Software Development Intern",
+            start: new Date("2024-06-01"),
+            end: new Date("2024-10-31"),
             timeline: "June 2024 - Oct 2024",
             points: [
                 "Collaborated with 2 senior developers to create and maintain 2 primary codebases for marketing of the primary bettermindlabs site",
                 "Used No-code tools like WIX studio and Coding Framework like Reactjs to replicate website for better performance metrices",
             ],
             color: "teal",
+            logo: "/experience/bml.png",
+        },
+        {
+            name: "Summer of Bitcoin'25",
+            position: "Open Source Developer",
+            start: new Date("2025-05-01"),
+            end: new Date("2025-08-31"),
+            timeline: "May 2024 - Aug 2024",
+            points: [
+                "Summer of Bitcoin open source under the Braidpool organization",
+                "Creating of an AI assisted coding and FIM tool built specifically for bitcoin or blockchain related tasks",
+            ],
+            color: "teal",
+            logo: "/experience/sob.png",
         },
         {
             name: "Open Source Contributions",
             position: "Open Source enthusiast",
+            start: new Date("2023-01-01"),
+            end: new Date("2024-01-01"),
             timeline: "> 1 Year",
             points: [
                 "More than 30 professional contributions in various open source projects",
@@ -24,57 +54,12 @@ export async function Experience() {
             ],
             color: "teal",
         },
-        {
-            name: "Techkriti - IIT Kanpur",
-            position: "Dual hackathon winner",
-            timeline: "May 2024",
-            points: [
-                "2nd position in Re-Dev the flagship web development hackathon of IIT Kanpur among 100+ teams",
-                "2nd runners up in Cybersecurity contest CTF amoong 50+ other shortlisted teams",
-            ],
-            color: "teal",
-        },
-        {
-            name: "Kshitij - IIT Kharagpur",
-            position: "Dual hackathon winner",
-            timeline: "May 2024",
-            points: [
-                "1st position in Zero Trust, a 24 hour long cloud and blockchain hackathon among 100+ teams",
-                "One of the top positions in East india blockkchain summit, the largest blockchain hackathon in Eastern India",
-            ],
-            color: "teal",
-        },
-        {
-            name: "GSSOC'24",
-            position: "Open Source Developer",
-            timeline: "March 2024 - May 2024",
-            points: [
-                "Start of my open source journey",
-                "Added more than 10,000 lines of code through merged PRs to more than 16 repositories as a part of GSSOC'24 open source program",
-            ],
-            color: "teal",
-        },
-        {
-            name: "BSOC'24",
-            position: "Open Source Developer",
-            timeline: "May 2024 - August 2024",
-            points: [
-                "Intra college 3 month long open source bootcamp",
-                "Worked on 3 main repositories under the mentorship of 5 senior mentors to add major features and smashing bugs with my peers",
-            ],
-            color: "teal",
-        },
-        {
-            name: "Hacktoberfest'24",
-            position: "Open Source Developer",
-            timeline: "Oct 2024 - Nov 2024",
-            points: [
-                "Continuation of my open source journey",
-                "Contributed to more than 20 repositories as a part of Hacktoberfest'24 open source program",
-            ],
-            color: "teal",
-        },
     ]
+
+    const sortedExperiences = experiences.sort(
+        (a, b) => b.start.getTime() - a.start.getTime()
+    )
+
     return (
         <section
             className="container relative mb-16 mt-6 w-full"
@@ -84,29 +69,56 @@ export async function Experience() {
             <h3 className="mb-12 w-full rounded-xl bg-secondary py-3 text-center text-3xl font-bold lg:text-4xl">
                 Experience
             </h3>
-            {experiences.map((exp) => (
+            {sortedExperiences.map((exp) => (
                 <div
+                    key={exp.name}
                     className={cn(
-                        "mb-12 md:border-l-4 md:pl-4",
-                        `border-teal-600/50 from-teal-600/10 to-transparent py-4 md:bg-gradient-to-r`
+                        "relative mb-12 overflow-hidden md:mb-4 md:border-l-4 md:pl-4",
+                        `border-${exp.color}-600/50 from-${exp.color}-600/10 to-transparent py-4 md:bg-gradient-to-r`
                     )}
                 >
-                    <div className="flex items-center gap-2">
-                        <Globe className="text-teal-600" />
-                        <h2 className="-mb-1 font-heading text-3xl">
-                            {exp.name}
-                        </h2>
-                    </div>
-                    <p className="mb-6 text-xl ">
-                        {exp.position}
-                        {"  "}({exp.timeline})
-                    </p>
+                    {exp.logo && (
+                        <div className="absolute inset-0 z-0 flex items-center justify-center opacity-10 md:hidden">
+                            <Image
+                                src={exp.logo}
+                                alt={`${exp.name} logo`}
+                                width={200}
+                                height={200}
+                                className="overflow-hidden rounded-full object-contain"
+                            />
+                        </div>
+                    )}
 
-                    <ul className="space-y-2">
-                        {exp.points.map((i) => (
-                            <li>- {i}</li>
-                        ))}
-                    </ul>
+                    <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between">
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <Globe className="text-teal-600" />
+                                <h2 className="-mb-1 font-heading text-3xl">
+                                    {exp.name}
+                                </h2>
+                            </div>
+                            <p className="mb-6 text-xl">
+                                {exp.position} ({exp.timeline})
+                            </p>
+                            <ul className="space-y-2">
+                                {exp.points.map((i) => (
+                                    <li key={i}>- {i}</li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="my-auto hidden shrink-0 md:ml-6 md:block">
+                            {exp.logo && (
+                                <Image
+                                    src={exp.logo}
+                                    alt={`${exp.name} logo`}
+                                    width={100}
+                                    height={100}
+                                    className="mr-12 overflow-hidden rounded-full border-2 border-teal-600/50 bg-teal-600/10 object-contain p-1"
+                                />
+                            )}
+                        </div>
+                    </div>
                 </div>
             ))}
         </section>
