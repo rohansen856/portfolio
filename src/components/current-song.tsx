@@ -43,10 +43,10 @@ export function CurrentSong() {
             }`}
         >
             <div className="absolute z-[-10] h-full w-full rounded-md bg-secondary" />
-            <div className="relative m-2 h-32 w-28 overflow-hidden rounded-md bg-cyan-800">
+            <div className="relative m-2 h-32 w-36 overflow-hidden rounded-md bg-cyan-800">
                 <Image src="/song.jpg" alt="" fill className="object-cover" />
             </div>
-            <div className="m-2 ml-0 flex h-32 w-[270px] flex-col gap-1 rounded-md bg-cyan-800 p-1">
+            <div className="m-2 ml-0 flex h-32 w-full flex-col gap-1 rounded-md bg-cyan-800 p-1">
                 <div className="flex h-16 w-full gap-2 p-1">
                     <div className="relative h-full w-12">
                         <Image

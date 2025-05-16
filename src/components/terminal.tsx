@@ -6,22 +6,25 @@ import { TypeWriter } from "@/components/type-writer"
 export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
     var startDate = "2004-10-26"
     function getDateDifference(startDate: string) {
-        var start = new Date(startDate).getTime()
-        var end = new Date().getTime()
+        const start = new Date(startDate)
+        const now = new Date()
 
-        var difference = Math.abs(end - start)
+        let years = now.getFullYear() - start.getFullYear()
+        let months = now.getMonth() - start.getMonth()
+        let days = now.getDate() - start.getDate()
 
-        var millisecondsInDay = 1000 * 3600 * 24
-
-        var days = Math.floor(difference / millisecondsInDay)
-        var months = Math.floor(days / 30)
-        var years = Math.floor(months / 12)
-
-        return {
-            days: days % 30,
-            months: months % 12,
-            years: years,
+        if (days < 0) {
+            months -= 1
+            const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0)
+            days += prevMonth.getDate()
         }
+
+        if (months < 0) {
+            years -= 1
+            months += 12
+        }
+
+        return { years, months, days }
     }
 
     const diff = getDateDifference(startDate)
@@ -47,8 +50,8 @@ export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
                     + rcsen@{diff.years}.{diff.months}.{diff.days}
                 </p>
                 <p className="text-white">
-                    acquired 5 skills, and worked in 2 domains in {diff.years}
-                    yrs
+                    Open Source Enthusiast, Blockchain and Cloud developer, In
+                    love with AI & Machime learning
                 </p>
                 <p className="text-green-400">$ flutter pub get skills</p>
                 <TypeWriter />

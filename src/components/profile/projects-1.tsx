@@ -67,7 +67,7 @@ const projects = [
         details: [
             {
                 image: "/projects/portfolio.png",
-                name: "Zealtech",
+                name: "Portfolio Website",
                 badges: [
                     "personal",
                     "portfolio",
@@ -90,14 +90,13 @@ const projects = [
                 github: "https://github.com/rohansen856/digi-marketing",
                 live: "https://zealtech.vercel.app",
             },
-
             {
                 image: "/projects/win95.png",
-                name: "Zealtech",
+                name: "Windows 95 GUI",
                 badges: [
-                    "personal",
-                    "portfolio",
-                    "framer-motion",
+                    "GUI",
+                    "Implementation",
+                    "Legacy Clone",
                     "nextjs",
                     "UI",
                     "UX",
@@ -225,6 +224,22 @@ const projects = [
                 github: "https://github.com/rohansen856/go-blockchain",
                 live: null,
             },
+            {
+                image: "/projects/go-mailing-bulk.png",
+                name: "Golang Bulk mailing using redis queue",
+                badges: [
+                    "backend",
+                    "golang",
+                    "mailing",
+                    "SMTP",
+                    "redis",
+                    "Queue",
+                ],
+                description:
+                    "This is a scalable email queue implementation in Go, utilizing Redis for queue management and providing a flexible email sending system with retry mechanisms and template support.",
+                github: "https://github.com/rohansen856/redis-go-mailing-bulk",
+                live: null,
+            },
         ],
     },
     {
@@ -271,7 +286,7 @@ const projects = [
                 ],
                 description:
                     "Implementation of microservices architecture with 2 servers utilizing postgres connectivity and kafka, a load balancer, a rate limiter and prometheus analytics with grafana visualization.",
-                github: "https://github.com/rohansen856/rust-microservices",
+                github: "https://github.com/rohansen856/rust-microservice",
                 live: null,
             },
             {
