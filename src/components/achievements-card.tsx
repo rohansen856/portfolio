@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
@@ -8,7 +7,6 @@ import { Award, Calendar, ChevronRight, ExternalLink } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import {
     Tooltip,
     TooltipContent,
@@ -33,7 +31,7 @@ export function AchievementCard({ achievement }: { achievement: Achievement }) {
                 initial={{ y: 10, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="overflow-hidden rounded-xl border border-border bg-background/80 shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-xl"
+                className="h-full overflow-hidden rounded-xl border border-border bg-background/80 shadow-md transition-all duration-300 hover:border-primary/50 hover:shadow-xl"
             >
                 <div className="relative h-52 w-full overflow-hidden">
                     <Image

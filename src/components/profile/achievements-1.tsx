@@ -127,7 +127,28 @@ export async function Achievements() {
             url: "",
         },
         {
-            title: "OSS Supply Chain Security - OpenSSF",
+            title: "Introduction to Kubernetes - CNCF",
+            date: "May 2024",
+            category: "Certifications",
+            description:
+                "Acquired in-depth expertise in Kubernetes fundamentals and advanced orchestration techniques.",
+            tags: [
+                "Kubernetes",
+                "Container Orchestration",
+                "Cloud Native Architecture",
+                "DevOps Automation",
+                "Cluster Management",
+            ],
+            image: "/achievements/kubernetes-intro.png",
+            points: [
+                "Mastered Kubernetes core architecture including control plane and worker nodes.",
+                "Best practices for deployment strategies, scaling, and self-healing of pods.",
+                "Configured networking, storage, and security policies for enterprise-grade clusters.",
+            ],
+            url: "",
+        },
+        {
+            title: "Introduction to Kubernetes - CNCF",
             date: "May 2024",
             category: "Certifications",
             description:
@@ -179,7 +200,7 @@ export async function Achievements() {
                 "Open Source",
                 "Rust",
                 "Developer Experience",
-                "Blockchain Infrastructure",
+                "Blockchain",
             ],
             image: "/achievements/sob.png",
             points: [
@@ -282,7 +303,7 @@ export async function Achievements() {
                                     {key}
                                 </span>
                             </h3>
-                            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
+                            <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 lg:gap-8">
                                 {group.map((achievement, index) => (
                                     <AchievementCard
                                         key={index}

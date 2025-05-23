@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site"
 import { absoluteUrl, cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@/components/analytics"
+import { Sidebar } from "@/components/side-nav"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 
 // import { ThemeProvider } from "@/components/theme-provider"
@@ -42,11 +43,21 @@ export const metadata = {
     },
     description: siteConfig.description,
     keywords: [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "Server Components",
-        "Radix UI",
+        "Portfolio",
+        "Rohan",
+        "Rohan Sen",
+        "Rohan Chandra Sen",
+        "Rohan Sen Portfolio",
+        "Rohan Sen Profile",
+        "Rohan Sen Resume",
+        "Rohan Sen CV",
+        "Rohan Sen Projects",
+        "Rohan Sen Achievements",
+        "Rohan Sen Skills",
+        "Rohan Sen Experience",
+        "Rohan Sen Open Source",
+        "Rohan Sen Open Source Contributions",
+        "Rohan Sen Open Source Projects",
     ],
     authors: [
         {
@@ -90,6 +101,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
                     fontHeading.variable
                 )}
             >
+                <header className="hidden sm:block">
+                    <Sidebar />
+                </header>
                 {children}
                 <Analytics />
                 <Toaster />

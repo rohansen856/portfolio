@@ -16,11 +16,11 @@ export default async function MarketingLayout({
         <div className="relative flex min-h-screen flex-col overflow-x-hidden">
             <AppShowcaseBg />
             <RightBar className="hidden md:flex lg:hidden xl:flex" />
-            <header className="container fixed inset-x-3 top-2 z-40 rounded border backdrop-blur">
+            {/* <header className="container fixed inset-x-3 top-2 z-40 rounded border backdrop-blur">
                 <div className="flex h-12 items-center justify-between py-6">
                     <MainNav items={marketingConfig.mainNav} />
                 </div>
-            </header>
+            </header> */}
             <main className="flex-1">{children}</main>
         </div>
     )

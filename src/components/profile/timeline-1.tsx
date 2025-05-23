@@ -121,7 +121,7 @@ export function Timeline() {
                                     <div className="flex w-full flex-col items-center">
                                         {item.serial % 2 === 0 ? (
                                             <div className="mb-6 pb-8 text-center">
-                                                <h4 className="mb-1 text-xl font-medium">
+                                                <h4 className="mb-1 text-lg font-medium">
                                                     {item.name}
                                                 </h4>
                                                 <p className="text-lg opacity-60">
