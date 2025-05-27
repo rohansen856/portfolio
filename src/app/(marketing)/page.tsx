@@ -21,7 +21,7 @@ export default async function ProfilePage() {
                     image="/profile-removebg.png"
                 />
                 <Current />
-                <Timeline />
+                {/* <Timeline /> */}
                 <Experience />
                 <Achievements />
                 <Skills />

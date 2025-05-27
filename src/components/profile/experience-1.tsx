@@ -17,6 +17,46 @@ type ExperienceArrProps = {
 export function Experience() {
     const experiences: ExperienceArrProps = [
         {
+            name: "LFX Mentorship'25",
+            position: "Open Source Mentee",
+            start: new Date("2025-05-01"),
+            end: new Date("2025-08-31"),
+            timeline: "May 2025 - Aug 2025",
+            points: [
+                "Selected as an LFX Mentee under the Open Mainframe Project",
+                "Contributing to Zowe Zebra - monitoring performance of zOS systems",
+            ],
+            color: "teal",
+            logo: "/experience/lfx.png",
+        },
+        {
+            name: "Summer of Bitcoin'25",
+            position: "Open Source Developer",
+            start: new Date("2025-05-01"),
+            end: new Date("2025-08-31"),
+            timeline: "May 2025 - Aug 2025",
+            points: [
+                "Summer of Bitcoin open source under the Braidpool organization",
+                "Creating of an AI assisted coding and FIM tool built specifically for bitcoin or blockchain related tasks",
+            ],
+            color: "teal",
+            logo: "/experience/sob.png",
+        },
+        {
+            name: "C4GT DMP'25",
+            position: "Developer Mentee",
+            start: new Date("2025-05-01"),
+            end: new Date("2025-08-31"),
+            timeline: "May 2025 - Aug 2025",
+            points: [
+                "Selected as a Developer Mentee for C4GT (Code for GovTech) 2025 under NSUT organization",
+                "Contributing to open-source digital public infrastructure in collaboration with government bodies",
+                "Working on impactful solutions aligned with the Digital Public Goods (DPG) mission for public benefit",
+            ],
+            color: "teal",
+            logo: "/experience/c4gt.png",
+        },
+        {
             name: "BetterMindLabs",
             position: "Software Development Intern",
             start: new Date("2024-06-01"),
@@ -28,19 +68,6 @@ export function Experience() {
             ],
             color: "teal",
             logo: "/experience/bml.png",
-        },
-        {
-            name: "Summer of Bitcoin'25",
-            position: "Open Source Developer",
-            start: new Date("2025-05-01"),
-            end: new Date("2025-08-31"),
-            timeline: "May 2024 - Aug 2024",
-            points: [
-                "Summer of Bitcoin open source under the Braidpool organization",
-                "Creating of an AI assisted coding and FIM tool built specifically for bitcoin or blockchain related tasks",
-            ],
-            color: "teal",
-            logo: "/experience/sob.png",
         },
         {
             name: "Open Source Contributions",
@@ -107,14 +134,14 @@ export function Experience() {
                             </ul>
                         </div>
 
-                        <div className="my-auto hidden shrink-0 md:ml-6 md:block">
+                        <div className="my-auto mr-12 hidden aspect-square shrink-0 md:ml-6 md:grid">
                             {exp.logo && (
                                 <Image
                                     src={exp.logo}
                                     alt={`${exp.name} logo`}
                                     width={100}
                                     height={100}
-                                    className="mr-12 overflow-hidden rounded-full border-2 border-teal-600/50 bg-teal-600/10 object-contain p-1"
+                                    className="m-auto overflow-hidden rounded-full border-2 border-teal-600/50 bg-teal-500/20 object-contain p-1"
                                 />
                             )}
                         </div>
