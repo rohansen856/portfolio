@@ -137,6 +137,7 @@ export function Skills() {
                         className="object-contain opacity-30"
                     />
                     {[
+                        "zos",
                         "windows",
                         "linux",
                         "apple",
