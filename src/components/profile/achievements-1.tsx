@@ -3,28 +3,29 @@ import { AchievementCard } from "../achievements-card"
 export async function Achievements() {
     const achievements = [
         {
-            title: "Techkriti'24 Dual Track Winner",
-            date: "March 2024",
+            title: "Innowave'25 Winner - Cognizance, IIT Roorkee",
+            date: "March 2025",
             category: "Hackathons",
             description:
-                "Secured top position in both Web Development and Cybersecurity tracks in Techkriti 24-hour hackathon.",
+                "Won the Innowave business hackathon at Cognizance, IIT Roorkee, for developing an innovative, impact-driven tech solution aligned with real-world business challenges.",
             tags: [
-                "Cybersecurity",
-                "Web Development",
-                "Secure Architecture",
-                "Full Stack",
-                "Threat Modeling",
+                "Business Hackathon",
+                "Tech for Impact",
+                "Innovation",
+                "Strategy",
+                "Pitching",
+                "Product Design",
             ],
-            image: "/achievements/techkriti.jpg",
+            image: "/achievements/cognizance.png",
             points: [
-                "Designed and implemented enterprise-grade full-stack applications.",
-                "Integrated advanced security and compliance mechanisms.",
-                "Focused on performance optimization and secure coding practices.",
+                "Ideated and built a scalable solution to address a critical market gap using tech-driven business insights.",
+                "Led product design and strategic pitch development tailored for industry mentors and judges.",
+                "Collaborated on cross-functional aspects including UX, tech architecture, and business modeling.",
             ],
             url: "",
         },
         {
-            title: "Kshitij'25 Dual Track Winner",
+            title: "Kshitij'25 Dual Track Winner - IIT Kharagpur",
             date: "January 2025",
             category: "Hackathons",
             description:
@@ -41,6 +42,27 @@ export async function Achievements() {
                 "Built decentralized applications with integrated zero trust security models.",
                 "Used CI/CD and containerized deployments for scalable delivery.",
                 "Emphasized security-first design with blockchain-based verification systems.",
+            ],
+            url: "",
+        },
+        {
+            title: "Techkriti'24 Dual Track Winner - IIT Kanpur",
+            date: "March 2024",
+            category: "Hackathons",
+            description:
+                "Secured top position in both Web Development and Cybersecurity tracks in Techkriti 24-hour hackathon.",
+            tags: [
+                "Cybersecurity",
+                "Web Development",
+                "Secure Architecture",
+                "Full Stack",
+                "Threat Modeling",
+            ],
+            image: "/achievements/techkriti.jpg",
+            points: [
+                "Designed and implemented enterprise-grade full-stack applications.",
+                "Integrated advanced security and compliance mechanisms.",
+                "Focused on performance optimization and secure coding practices.",
             ],
             url: "",
         },
@@ -169,6 +191,28 @@ export async function Achievements() {
             url: "",
         },
         {
+            title: "EU Cybersecurity Resilience Act",
+            date: "May 2025",
+            category: "Certifications",
+            description:
+                "Completed a specialized training on the EU Cybersecurity Resilience Act, focusing on regulatory compliance, secure development practices, and risk management for digital products.",
+            tags: [
+                "Cybersecurity",
+                "Regulatory Compliance",
+                "Secure Development",
+                "EU Regulations",
+                "Risk Management",
+            ],
+            image: "/achievements/eu-cra.png",
+            points: [
+                "Studied the core principles and legal framework of the EU Cybersecurity Resilience Act.",
+                "Learned how to implement secure software development lifecycle (SSDLC) practices in line with EU standards.",
+                "Explored requirements for vulnerability management, documentation, and reporting obligations.",
+                "Analyzed the act's impact on open source and commercial software supply chains.",
+            ],
+            url: "",
+        },
+        {
             title: "OSS Security Management - OpenSSF",
             date: "May 2024",
             category: "Certifications",
@@ -190,7 +234,7 @@ export async function Achievements() {
         },
         {
             title: "Summer of Bitcoin 2025 Contributor",
-            date: "May 2025 – August 2025",
+            date: "May 2025 - August 2025",
             category: "Open Source",
             description:
                 "Selected as a contributor in Summer of Bitcoin 2025 under the BraqidPool organization.",
@@ -210,6 +254,54 @@ export async function Achievements() {
                 "Built and optimized Rust-based backend modules for AI-enhanced static analysis",
             ],
             url: "https://summerofbitcoin.org",
+        },
+        {
+            title: "LFX 2025 Contributor - Open Mainframe Project",
+            date: "March 2025 - June 2025",
+            category: "Open Source",
+            description:
+                "Selected as an LFX Mentorship contributor under the Open Mainframe Project, working on Zowe Zebra CLI and Python automation modules.",
+            tags: [
+                "Mainframe",
+                "Open Source",
+                "Python",
+                "Zowe",
+                "CLI",
+                "LFX Mentorship",
+            ],
+            image: "/achievements/lfx.png",
+            points: [
+                "Enhanced Zowe Zebra CLI features for better mainframe developer tooling",
+                "Developed Python-based automation scripts for mainframe task simplification",
+                "Collaborated with project mentors on improving CLI usability and test coverage",
+                "Contributed documentation and code improvements to Zebra's open-source repository",
+            ],
+            url: "https://lfx.linuxfoundation.org/tools/mentorship/",
+        },
+        {
+            title: "C4GT 2025 Contributor – STRK Schedule",
+            date: "May 2025 - August 2025",
+            category: "Open Source",
+            description:
+                "Selected as a contributor in Code for GovTech 2025, working on STRK Schedule – a decentralized healthcare solution built on Starknet for secure diabetes management in government healthcare systems.",
+            tags: [
+                "Web3",
+                "Blockchain",
+                "Healthcare",
+                "Starknet",
+                "ZK Rollups",
+                "NFTs",
+                "DAO",
+                "Public Goods",
+            ],
+            image: "/achievements/c4gt.png",
+            points: [
+                "Integrated Voyager API for real-time contract verification and transaction transparency in medical data flow.",
+                "Designed NFT-based medical incident tracking to enable personalized, secure, and immutable patient records.",
+                "Contributed to DAO integration for incentivized patient health tracking via gasless voting and decentralized governance.",
+                "Collaborated with stakeholders to ensure alignment with Digital Public Goods (DPG) principles for scalable impact.",
+            ],
+            url: "https://www.codeforgovtech.in",
         },
         {
             title: "Hacktoberfest 2024 Completion",
@@ -273,6 +365,48 @@ export async function Achievements() {
             ],
             url: "",
         },
+        {
+            title: "Blockchain Lead - BitByte, The Programming Club",
+            date: "July 2024 - Present",
+            category: "Volunteering",
+            description:
+                "Spearheaded blockchain initiatives at IIITDM Jabalpur's official programming club to cultivate decentralized tech adoption and student engagement.",
+            tags: [
+                "Blockchain",
+                "Community Leadership",
+                "Decentralization",
+                "Developer Advocacy",
+                "Technical Workshops",
+            ],
+            image: "/achievements/bitbyte.png",
+            points: [
+                "Organized campus-wide workshops and meetups to educate students on blockchain fundamentals and development tools.",
+                "Guided technical teams in building smart contract projects and participating in Web3 hackathons.",
+                "Promoted open collaboration and hands-on learning through curated blockchain learning paths and mentorship.",
+            ],
+            url: "",
+        },
+        {
+            title: "Community Coordinator - LF Decentralized Trust",
+            date: "May 2025 - Present",
+            category: "Volunteering",
+            description:
+                "Led regional outreach and education initiatives under the Linux Foundation's Decentralized Trust project, advancing awareness of trustless systems and decentralized identity.",
+            tags: [
+                "Decentralized Identity",
+                "Community Leadership",
+                "Self-Sovereign Identity",
+                "Open Source",
+                "Trust Architectures",
+            ],
+            image: "/achievements/lfdt.png",
+            points: [
+                "Organized technical sessions and meetups on decentralized trust, SSI, and blockchain governance models.",
+                "Facilitated collaboration between student communities, developers, and industry experts.",
+                "Championed the Linux Foundation's mission to build transparent, interoperable trust infrastructures.",
+            ],
+            url: "",
+        },
     ]
 
     const grouped = {
@@ -281,6 +415,7 @@ export async function Achievements() {
             (a) => a.category === "Certifications"
         ),
         Hackathons: achievements.filter((a) => a.category === "Hackathons"),
+        Volunteering: achievements.filter((a) => a.category === "Volunteering"),
         Others: achievements.filter((a) => a.category === "Others"),
     }
 

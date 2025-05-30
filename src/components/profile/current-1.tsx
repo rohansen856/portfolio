@@ -45,28 +45,27 @@ export function Current() {
                 <p className="mb-8">
                     I&apos;m a software developer skilled at{" "}
                     <span className="font-bold text-blue-500">
-                        Full-Stack Development
+                        DevOPS and Blockchain
                     </span>{" "}
                     specialising in Back-End Development and Software
                     Architecture. I enjoy discussing topics relating to
                     <span className="font-bold text-blue-500">
-                        System Design, DevOps, Microservices and Cloud
+                        System Design, Open Source, Microservices and Cloud
                         Architecture.
                         <br />
                         <br />
                     </span>
                     Hit me up anytime you want to chat about{" "}
                     <span className="font-bold text-blue-500">
-                        System Architecture, Blockchain, Cloud, Rust, Go-Lang
+                        System Architecture, Blockchain, Cloud, Rust, Go-Lang,
+                        Open Source
                     </span>{" "}
                     or anything you have in mind. Let&apos;s work together and
                     create something great !!
                 </p>
                 <Link
                     className="w-full"
-                    href={
-                        "https://utfs.io/f/96GOcDjysAigPWEvE4ccYX4sKAgfVumLWv5xBRoTeFlb37y2"
-                    }
+                    href={"/Rohan_s_Resume.pdf"}
                     target="_blank"
                 >
                     <RainbowButton className="w-2/3 rounded">
