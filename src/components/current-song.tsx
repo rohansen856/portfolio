@@ -17,8 +17,10 @@ import {
 } from "@/components/ui/alert-dialog"
 import { Button } from "@/components/ui/button"
 
+import { Badge } from "./ui/badge"
+
 export function CurrentSong() {
-    const router = useRouter()
+    const [tone, setTone] = useState("serious")
     const [isPlaying, setPlaying] = useState<boolean>(false)
     const audioRef = useRef<HTMLAudioElement | null>(null)
 
@@ -61,6 +63,24 @@ export function CurrentSong() {
                         <h3 className="text-xs">by AI</h3>
                     </div>
                 </div>
+                <div className="flex gap-2 px-2">
+                    <Badge
+                        variant={tone === "serious" ? "default" : "outline"}
+                        className="cursor-pointer"
+                        onClick={() => !isPlaying && setTone("serious")}
+                    >
+                        serious
+                    </Badge>
+                    <Badge
+                        variant={
+                            tone === "enthusiastic" ? "default" : "outline"
+                        }
+                        className="cursor-pointer"
+                        onClick={() => !isPlaying && setTone("enthusiastic")}
+                    >
+                        enthusuastic
+                    </Badge>
+                </div>
                 <div className="flex h-16 w-full items-center gap-2 rounded-sm p-1">
                     <AlertDialog>
                         <AlertDialogTrigger asChild>
@@ -79,8 +99,8 @@ export function CurrentSong() {
                                     Are you absolutely sure?
                                 </AlertDialogTitle>
                                 <AlertDialogDescription>
-                                    {isPlaying ? "Pause" : "Play"} the song
-                                    right now?
+                                    {isPlaying ? "Pause" : "Play"} the voiceover
+                                    right now? (tone: <Badge>{tone}</Badge>)
                                 </AlertDialogDescription>
                             </AlertDialogHeader>
                             <AlertDialogFooter>
@@ -102,7 +122,13 @@ export function CurrentSong() {
                         <p className="opacity-75">Listen all about me!</p>
                     )}
                     <audio
-                        ref={audioRef}
+                        ref={tone === "serious" ? audioRef : null}
+                        src="https://so22vt7yl9.ufs.sh/f/96GOcDjysAigKxj0mxDHfJDUygmvczCjL1XWo6TOqxbENKPn"
+                        className="hidden"
+                        preload="none"
+                    />
+                    <audio
+                        ref={tone === "enthusiastic" ? audioRef : null}
                         src="https://utfs.io/f/96GOcDjysAigTjm4s97b67IngwMilacpjBNtF8uQfqOZVYkh"
                         className="hidden"
                         preload="none"
