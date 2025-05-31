@@ -11,6 +11,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@/components/analytics"
 import { Sidebar } from "@/components/side-nav"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { VisitCounter } from "@/components/visit-counter"
 
 // import { ThemeProvider } from "@/components/theme-provider"
 
@@ -104,6 +105,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <header className="hidden sm:block">
                     <Sidebar />
                 </header>
+                <VisitCounter />
                 {children}
                 <Analytics />
                 <Toaster />

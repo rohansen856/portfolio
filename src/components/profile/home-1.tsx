@@ -1,3 +1,6 @@
+import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
+
 import { ProfileImage } from "@/components/profile-image"
 import { Social } from "@/components/social"
 import { Terminal } from "@/components/terminal"
@@ -25,6 +28,14 @@ export function Home(props: HomeProps) {
                 <h1 className="animate-gradient relative bg-clip-text font-heading text-4xl text-transparent sm:text-5xl md:text-6xl lg:w-full xl:text-7xl">
                     Hi, I am <span className="capitalize">{props.name}</span>
                 </h1>
+                <Link
+                    href={"mailto:rohansen856@gmail.com"}
+                    target="_blank"
+                    className="hidden text-3xl text-blue-500 underline xl:flex"
+                >
+                    rohansen856@gmail.com
+                    <ArrowUpRight className="size-6 text-blue-500" />
+                </Link>
                 <h3 className="mb-3 text-lg font-bold text-primary md:text-xl lg:mb-12 lg:w-full lg:text-2xl">
                     <Social
                         social={[
@@ -37,9 +48,6 @@ export function Home(props: HomeProps) {
                         className="md:hidden lg:flex xl:hidden"
                     />
                 </h3>
-                {/* <p className="mb-8 px-6 text-center lg:mb-16">
-                    {props.description}{" "}
-                </p> */}
                 <Terminal />
             </div>
         </section>
