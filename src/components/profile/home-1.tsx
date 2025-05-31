@@ -31,7 +31,7 @@ export function Home(props: HomeProps) {
                 <Link
                     href={"mailto:rohansen856@gmail.com"}
                     target="_blank"
-                    className="hidden text-3xl text-blue-500 underline xl:flex"
+                    className="hidden text-2xl font-light text-blue-500 underline xl:flex"
                 >
                     rohansen856@gmail.com
                     <ArrowUpRight className="size-6 text-blue-500" />
