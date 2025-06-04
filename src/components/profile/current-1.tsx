@@ -48,7 +48,7 @@ export function Current() {
                         DevOPS and Blockchain
                     </span>{" "}
                     specialising in Back-End Development and Software
-                    Architecture. I enjoy discussing topics relating to
+                    Architecture. I enjoy discussing topics relating to{" "}
                     <span className="font-bold text-blue-500">
                         System Design, Open Source, Microservices and Cloud
                         Architecture.
