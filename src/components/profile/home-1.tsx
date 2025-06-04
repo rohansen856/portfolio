@@ -39,11 +39,26 @@ export function Home(props: HomeProps) {
                 <h3 className="mb-3 text-lg font-bold text-primary md:text-xl lg:mb-12 lg:w-full lg:text-2xl">
                     <Social
                         social={[
-                            "linkedin",
-                            "twitter",
-                            "instagram",
-                            "github",
-                            "gmail",
+                            {
+                                name: "github",
+                                link: "https://github.com/rohansen856/",
+                            },
+                            {
+                                name: "linkedin",
+                                link: "https://www.linkedin.com/in/rohan856/",
+                            },
+                            {
+                                name: "instagram",
+                                link: "https://www.instagram.com/rcsen856",
+                            },
+                            {
+                                name: "twitter",
+                                link: "https://x.com/rohansen856",
+                            },
+                            {
+                                name: "gmail",
+                                link: "mailto:rohansen856@gmail.com",
+                            },
                         ]}
                         className="md:hidden lg:flex xl:hidden"
                     />
