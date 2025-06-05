@@ -683,10 +683,20 @@ const SkeletonFive = () => {
 }
 const items = [
     {
-        title: "AI Content Generation",
+        title: "Bitcoin AI assisted coding tool",
         description: (
             <span className="text-sm">
-                Experience the power of AI in generating unique content.
+                An agentic ai specializing in blockchain related tasks. Built
+                for the{" "}
+                <Link
+                    href={"https://github.com/braidpool"}
+                    target="_blank"
+                    className="text-blue-500"
+                >
+                    Braidpool
+                </Link>{" "}
+                org.
+                <Badge variant={"destructive"}>building</Badge>
             </span>
         ),
         header: <SkeletonOne />,
@@ -708,8 +718,14 @@ const items = [
         title: "3D designs",
         description: (
             <span className="text-sm">
-                Just some 3D objects and animations I created.
-                @rcsen-3d-designs.vercel.app
+                Just some 3D objects and animations I created. @
+                <Link
+                    href={"rcsen-3d-designs.vercel.app"}
+                    target="_blank"
+                    className="text-blue-500"
+                >
+                    rcsen-3d-designs.vercel.app
+                </Link>
             </span>
         ),
         header: <SkeletonThree />,
