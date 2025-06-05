@@ -17,11 +17,11 @@ const sidebarLinks = [
         icon: <Home className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
         href: "/#home",
     },
-    {
-        name: "Timeline",
-        icon: <Clock className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
-        href: "/#timeline",
-    },
+    // {
+    //     name: "Timeline",
+    //     icon: <Clock className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
+    //     href: "/#timeline",
+    // },
     {
         name: "Experience",
         icon: <Briefcase className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
