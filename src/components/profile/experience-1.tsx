@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Globe } from "lucide-react"
+import { ChevronRight, Globe } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -16,6 +16,19 @@ type ExperienceArrProps = {
 
 export function Experience() {
     const experiences: ExperienceArrProps = [
+        {
+            name: "Cero Hero",
+            position: "Backend Intern",
+            start: new Date("2025-07-15"),
+            end: new Date("2025-10-14"),
+            timeline: "July 2025 - Oct 2025",
+            points: [
+                "Worked as a backend intern at Cero Hero, a sustainability-focused Finnish startup.",
+                "Developed Golang APIs for user management, product catalog, and processing services.",
+            ],
+            color: "teal",
+            logo: "/experience/cerohero.png",
+        },
         {
             name: "LFX Mentorship'25",
             position: "Open Source Mentee",
@@ -127,9 +140,17 @@ export function Experience() {
                             <p className="mb-6 text-xl">
                                 {exp.position} ({exp.timeline})
                             </p>
-                            <ul className="space-y-2">
+                            <ul className="space-y-3">
                                 {exp.points.map((i) => (
-                                    <li key={i}>- {i}</li>
+                                    <li
+                                        key={i}
+                                        className="flex items-start gap-2"
+                                    >
+                                        <ChevronRight className="mt-1 h-4 w-4 shrink-0 text-teal-600" />
+                                        <span className="leading-relaxed text-gray-700 dark:text-gray-300">
+                                            {i}
+                                        </span>
+                                    </li>
                                 ))}
                             </ul>
                         </div>
