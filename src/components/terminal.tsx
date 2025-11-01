@@ -51,7 +51,7 @@ export function Terminal(props: React.HTMLAttributes<HTMLDivElement>) {
                 </p>
                 <p className="text-white">
                     Open Source Enthusiast, Blockchain and Cloud developer, In
-                    love with AI & Machime learning
+                    love with AI & Machine learning
                 </p>
                 <p className="text-green-400">$ flutter pub get skills</p>
                 <TypeWriter />
