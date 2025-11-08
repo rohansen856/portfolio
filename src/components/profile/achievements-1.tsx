@@ -3,6 +3,29 @@ import { AchievementCard } from "../achievements-card"
 export async function Achievements() {
     const achievements = [
         {
+            title: "SIH'25 Finalist - Smart India Hackathon",
+            date: "November 2025",
+            category: "Hackathons",
+            description:
+                "Shortlisted as finalist by National Technical Research Organisation (NTRO) for developing Advanced Persistent Threat (APT) detection system using ELK Stack for cybersecurity applications.",
+            tags: [
+                "Cybersecurity",
+                "ELK Stack",
+                "APT Detection",
+                "Elasticsearch",
+                "Threat Intelligence",
+                "Security Analytics",
+            ],
+            image: "/achievements/SIH.png",
+            points: [
+                "Developed sophisticated threat detection rules in ELK Stack for identifying Advanced Persistent Threats (APTs).",
+                "Implemented real-time monitoring and analysis of logs, network traffic, and system events for APT lifecycle detection.",
+                "Created detection mechanisms for credential dumping, lateral movement, PowerShell execution, and unusual egress data activities.",
+                "Used public APT samples to generate realistic log data for comprehensive testing and validation of threat rules.",
+            ],
+            url: "https://sih.gov.in/sih2025/screeningresult-batch1",
+        },
+        {
             title: "Innowave'25 Winner - Cognizance, IIT Roorkee",
             date: "March 2025",
             category: "Hackathons",
