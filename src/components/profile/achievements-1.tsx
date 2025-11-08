@@ -253,7 +253,7 @@ export async function Achievements() {
                 "Collaborated with global mentors and developers on decentralized open-source infrastructure",
                 "Built and optimized Rust-based backend modules for AI-enhanced static analysis",
             ],
-            url: "https://summerofbitcoin.org",
+            url: "https://drive.google.com/file/d/1HTbYnxABCg3yzGmWDIRxXma6Zcl9WRbS/view",
         },
         {
             title: "LFX 2025 Contributor - Open Mainframe Project",
@@ -276,7 +276,7 @@ export async function Achievements() {
                 "Collaborated with project mentors on improving CLI usability and test coverage",
                 "Contributed documentation and code improvements to Zebra's open-source repository",
             ],
-            url: "https://lfx.linuxfoundation.org/tools/mentorship/",
+            url: "https://drive.google.com/file/d/11i4PnTUlTfQTwl6RvNEyO40iqadD5cPb/view?usp=sharing",
         },
         {
             title: "C4GT 2025 Contributor – STRK Schedule",
@@ -301,7 +301,7 @@ export async function Achievements() {
                 "Contributed to DAO integration for incentivized patient health tracking via gasless voting and decentralized governance.",
                 "Collaborated with stakeholders to ensure alignment with Digital Public Goods (DPG) principles for scalable impact.",
             ],
-            url: "https://www.codeforgovtech.in",
+            url: "https://dway.io/b/fb044eba-ce32-4557-854f-33a40b6501e8?pdf=1",
         },
         {
             title: "Hacktoberfest 2024 Completion",
@@ -342,7 +342,7 @@ export async function Achievements() {
                 "Maintained coding standards and documentation across teams.",
                 "Optimized application performance and ensured security compliance.",
             ],
-            url: "",
+            url: "https://www.instagram.com/p/C-LNHSNtbk3/",
         },
         {
             title: "GSSOC'24 - Explorer Badge",
