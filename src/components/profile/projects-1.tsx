@@ -839,10 +839,17 @@ const items = [
         icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     },
     {
-        title: "Automated Proofreading",
+        title: "ELK Stack Monitoring",
         description: (
             <span className="text-sm">
-                Let AI handle the proofreading of your documents.
+                Complete monitoring solution using ELK stack for real-time log analysis and system observability.
+                <Link
+                    href={"https://github.com/rohansen856/elk-stack-monitoring"}
+                    target="_blank"
+                    className="text-blue-500 ml-1"
+                >
+                    GitHub
+                </Link>
             </span>
         ),
         header: <SkeletonTwo />,
@@ -850,16 +857,16 @@ const items = [
         icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     },
     {
-        title: "3D designs",
+        title: "Medico24",
         description: (
             <span className="text-sm">
-                Just some 3D objects and animations I created. @
+                Healthcare management platform providing 24/7 medical services and patient care solutions.
                 <Link
-                    href={"rcsen-3d-designs.vercel.app"}
+                    href={"https://github.com/Medico24/"}
                     target="_blank"
-                    className="text-blue-500"
+                    className="text-blue-500 ml-1"
                 >
-                    rcsen-3d-designs.vercel.app
+                    GitHub
                 </Link>
             </span>
         ),
@@ -871,7 +878,14 @@ const items = [
         title: "Campusorbit",
         description: (
             <span className="text-sm">
-                The ultimate ecoystem of never-seen-before tech-stack.
+                A comprehensive campus management platform for IIT, IIIT, and NIT students with schedule management, attendance tracking, club activities, and community features.
+                <Link
+                    href={"https://campusorbit.vercel.app"}
+                    target="_blank"
+                    className="text-blue-500 ml-1"
+                >
+                    Visit Live Site
+                </Link>
             </span>
         ),
         header: <SkeletonFour />,
@@ -880,10 +894,17 @@ const items = [
     },
 
     {
-        title: "Text Summarization",
+        title: "RMF Metrics Simulator",
         description: (
             <span className="text-sm">
-                Summarize your lengthy documents with AI technology.
+                z/OS mainframe metrics simulator that generates realistic IBM RMF Monitor III data with monitoring integration. 
+                <Link
+                    href={"https://github.com/rohansen856/rmf-simulator"}
+                    target="_blank"
+                    className="text-blue-500 ml-1"
+                >
+                    GitHub
+                </Link>
             </span>
         ),
         header: <SkeletonFive />,
