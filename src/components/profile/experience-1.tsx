@@ -17,6 +17,20 @@ type ExperienceArrProps = {
 export function Experience() {
     const experiences: ExperienceArrProps = [
         {
+            name: "European Summer of Code'26",
+            position: "Open Source Mentee Intern",
+            start: new Date("2025-12-01"),
+            end: new Date("2026-03-31"),
+            timeline: "Dec 2025 - Mar 2026",
+            points: [
+                "European Summer of Code 2026 Mentee under OpenML & AIonDemand",
+                "Built AutoML evaluation workflow on OpenML, automating dataset ingestion, model benchmarking, and experiment tracking.",
+                "Developed ML utilities for AIonDemand improving model stability across demand prediction workloads.",
+            ],
+            color: "teal",
+            logo: "/experience/esoc.png",
+        },
+        {
             name: "Cero Hero",
             position: "Backend Intern",
             start: new Date("2025-07-15"),
@@ -30,7 +44,7 @@ export function Experience() {
             logo: "/experience/cerohero.png",
         },
         {
-            name: "LFX Mentorship'25",
+            name: "Linux Foundation Mentorship'25",
             position: "Open Source Mentee",
             start: new Date("2025-05-01"),
             end: new Date("2025-08-31"),

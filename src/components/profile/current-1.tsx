@@ -76,26 +76,6 @@ export function Current() {
                     </Link>
                 </div>
             </div>
-            <div className="flex w-full flex-col items-center justify-center gap-6 py-3 lg:flex-row lg:gap-16">
-                <Image
-                    src="https://github-readme-streak-stats.herokuapp.com?user=rohansen856&theme=dark&hide_border=true"
-                    alt="GitHub contribution stats"
-                    className="h-auto w-full lg:w-4/12"
-                    width={800}
-                    height={200}
-                    unoptimized
-                />
-                <div className="flex w-full items-center justify-center lg:w-8/12">
-                    <Image
-                        src="https://ghchart.rshah.org/rohansen856"
-                        alt="GitHub chart"
-                        className="z-20 h-auto w-full opacity-90"
-                        width={800}
-                        height={200}
-                        unoptimized
-                    />
-                </div>
-            </div>
         </section>
     )
 }
