@@ -36,9 +36,27 @@ const projects = [
                     "PostgreSQL",
                 ],
                 description:
-                    "A robust NextJS application made with UX as primary concern. Made for the students of IIITDMJ for miscellaneous puposes like schedule management, club activity tracking, Mess food review etc.",
-                github: "https://github.com/rohansen856/digi-marketing",
+                    "A comprehensive campus management platform for IIT, IIIT, and NIT students with schedule management, attendance tracking, club activities, and community features.",
+                github: "https://github.com/rohansen856/campusorbit-web",
                 live: "https://campusorbit.vercel.app",
+            },
+            {
+                image: "/projects/medico24.png",
+                name: "Medico24",
+                badges: [
+                    "healthcare",
+                    "flutter",
+                    "python",
+                    "fastapi",
+                    "ML",
+                    "nextjs",
+                    "mobile",
+                    "observability",
+                ],
+                description:
+                    "A comprehensive health companion mobile application designed to provide seamless healthcare services and accessibility features for all users with AI-powered diagnostics.",
+                github: "https://github.com/Medico24",
+                live: null,
             },
             {
                 image: "/projects/veil.png",
