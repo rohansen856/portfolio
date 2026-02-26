@@ -3,6 +3,29 @@ import { AchievementCard } from "../achievements-card"
 export async function Achievements() {
     const achievements = [
         {
+            title: "HackBit'26 Winner - MLH hackathon",
+            date: "February 2026",
+            category: "Hackathons",
+            description:
+                "Won the Gemini Track at HackBit for building CodeAider, an AI-powered competitive programming assistant that mentors users in real time using Gemini 2.5 Flash while enforcing genuine learning without exposing solutions.",
+            tags: [
+                "Generative AI",
+                "Google Gemini",
+                "Browser Extension",
+                "Node.js",
+                "PostgreSQL",
+                "GraphQL",
+                "Developer Tools",
+            ],
+            image: "/achievements/hackbit.png",
+            points: [
+                "Built a Manifest V3 Chrome extension that extracts problem statements and user code from LeetCode and Codeforces for real-time contextual analysis.",
+                "Integrated Gemini model with a strict JSON response schema to provide intuition, approach guidance, complexity insights, and bug detection without revealing direct solutions.",
+                "Engineered a smart Solutions tab lock and auto-verdict detection pipeline to promote disciplined problem solving.",
+            ],
+            url: "https://devpost.com/software/codeaider",
+        },
+        {
             title: "SIH'25 Finalist - Smart India Hackathon",
             date: "November 2025",
             category: "Hackathons",
