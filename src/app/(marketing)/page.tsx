@@ -1,3 +1,4 @@
+import { DockDemo } from "@/components/mobile-nav"
 import { Achievements } from "@/components/profile/achievements-1"
 import { Current } from "@/components/profile/current-1"
 import { Experience } from "@/components/profile/experience-1"
@@ -20,6 +21,8 @@ export default async function ProfilePage() {
                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis necessitatibus aut nihil a eum blanditiis accusamus dolorum harum dolorem?"
                     image="/profile-removebg.png"
                 />
+                <div id="home-sentinel" />
+                <DockDemo />
                 <Current />
                 {/* <Timeline /> */}
                 <Experience />

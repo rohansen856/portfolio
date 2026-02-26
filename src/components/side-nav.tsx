@@ -11,7 +11,7 @@ import {
     Users,
 } from "lucide-react"
 
-const sidebarLinks = [
+export const sidebarLinks = [
     {
         name: "Home",
         icon: <Home className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
