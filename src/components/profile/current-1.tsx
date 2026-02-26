@@ -67,7 +67,7 @@ export function Current() {
                     </p>
                     <Link
                         className="w-full"
-                        href={"https://drive.google.com/file/d/1ISZVP_xogw31B7em_7JhLIDGeKCfawtQ/view?usp=sharing"}
+                        href={"https://drive.google.com/file/d/17Ywx4BO2J4_R4TziGTUzIqzFXdonDTE_/view?usp=sharing"}
                         target="_blank"
                     >
                         <RainbowButton className="w-2/3 rounded">
