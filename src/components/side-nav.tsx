@@ -1,20 +1,18 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import {
-    Briefcase,
-    Clock,
-    Code,
-    Folder,
-    Home,
-    Trophy,
-    Users,
-} from "lucide-react"
+import Link from "next/link";
+import { Briefcase, Clock, Code, Folder, Home, Trophy, Users } from "lucide-react";
+
+
+
+
 
 export const sidebarLinks = [
     {
         name: "Home",
-        icon: <Home className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
+        icon: (
+            <Home className="monitor:w-8 monitor:h-8 h-auto w-auto stroke-[#4285F4]" />
+        ),
         href: "/#home",
     },
     // {
@@ -24,27 +22,37 @@ export const sidebarLinks = [
     // },
     {
         name: "Experience",
-        icon: <Briefcase className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
+        icon: (
+            <Briefcase className="monitor:w-8 monitor:h-8 h-auto w-auto stroke-[#EA4335]" />
+        ),
         href: "/#experience",
     },
     {
         name: "Achievements",
-        icon: <Trophy className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
+        icon: (
+            <Trophy className="monitor:w-8 monitor:h-8 h-auto w-auto stroke-[#FBBC04]" />
+        ),
         href: "/#achievements",
     },
     {
         name: "Skills",
-        icon: <Code className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
+        icon: (
+            <Code className="monitor:w-8 monitor:h-8 h-auto w-auto stroke-[#34A853]" />
+        ),
         href: "/#skills",
     },
     {
         name: "Projects",
-        icon: <Folder className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
+        icon: (
+            <Folder className="monitor:w-8 monitor:h-8 h-auto w-auto stroke-[#E37400]" />
+        ),
         href: "/#projects",
     },
     {
         name: "Profiles",
-        icon: <Users className="monitor:w-8 monitor:h-8 h-auto w-auto" />,
+        icon: (
+            <Users className="monitor:w-8 monitor:h-8 h-auto w-auto stroke-[#FEEFC3]" />
+        ),
         href: "/#profiles",
     },
 ]
