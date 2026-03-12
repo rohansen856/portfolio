@@ -9,7 +9,6 @@ interface HomeProps {
     name: string
     job: string
     description: string
-    image: string
 }
 
 function getRandom(low: number, high: number) {

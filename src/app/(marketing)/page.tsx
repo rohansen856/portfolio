@@ -19,7 +19,6 @@ export default async function ProfilePage() {
                     name="rohan sen"
                     job="CPP Developer"
                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis necessitatibus aut nihil a eum blanditiis accusamus dolorum harum dolorem?"
-                    image="/profile-removebg.png"
                 />
                 <div id="home-sentinel" />
                 <DockDemo />

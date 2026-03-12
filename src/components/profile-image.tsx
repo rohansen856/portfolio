@@ -15,7 +15,7 @@ export function ProfileImage() {
     return (
         <div className="relative mb-5 flex h-[70%] w-full justify-center overflow-hidden lg:h-full">
             <Image
-                src={`/portraits/profile (${3}).png`}
+                src={`/portraits/profile.png`}
                 alt=""
                 fill
                 priority
