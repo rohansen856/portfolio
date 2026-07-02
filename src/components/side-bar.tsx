@@ -4,7 +4,7 @@ import Link from "next/link"
 export function RightBar(props: React.HTMLAttributes<HTMLDivElement>) {
     const social = [
         { name: "github", link: "https://github.com/rohansen856/" },
-        { name: "linkedin", link: "https://www.linkedin.com/in/rohan856/" },
+        { name: "linkedin", link: "https://www.linkedin.com/in/rohansen856/" },
         { name: "instagram", link: "https://www.instagram.com/rcsen856" },
         { name: "twitter", link: "https://x.com/rohansen856" },
         { name: "gmail", link: "mailto:rohansen856@gmail.com" },

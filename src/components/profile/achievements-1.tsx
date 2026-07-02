@@ -279,6 +279,28 @@ export async function Achievements() {
             url: "",
         },
         {
+            title: "European Summer of Code 2026 - Mentee",
+            date: "December 2025 - March 2026",
+            category: "Open Source",
+            description:
+                "Selected as an ESoC 2026 mentee working on AI/ML libraries under the AI for Europe initiative, contributing to AIonDemand and the OpenML ecosystem alongside their core developers.",
+            tags: [
+                "Open Source",
+                "AI/ML",
+                "OpenML",
+                "AIonDemand",
+                "Time Series",
+                "Python",
+            ],
+            image: "/experience/esoc.png",
+            points: [
+                "Worked on AI/ML libraries under the AI for Europe initiative.",
+                "Collaborated with core developers on their time-series model and model indexing.",
+                "Delivered backend fixes and library-wide improvements across the OpenML ecosystem.",
+            ],
+            url: "",
+        },
+        {
             title: "Summer of Bitcoin 2025 Contributor",
             date: "May 2025 - August 2025",
             category: "Open Source",

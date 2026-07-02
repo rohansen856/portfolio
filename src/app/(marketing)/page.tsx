@@ -17,8 +17,8 @@ export default async function ProfilePage() {
             <div className="relative w-full overflow-x-hidden">
                 <Home
                     name="rohan sen"
-                    job="CPP Developer"
-                    description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis necessitatibus aut nihil a eum blanditiis accusamus dolorum harum dolorem?"
+                    job="Backend & Open Source Developer"
+                    description="Backend and open source developer specializing in system architecture, blockchain, cloud, and DevOps. I build fast, reliable, scalable systems with Rust, Go, and TypeScript."
                 />
                 <div id="home-sentinel" />
                 <DockDemo />

@@ -10,6 +10,7 @@ import { absoluteUrl, cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import { Analytics } from "@/components/analytics"
 import { Sidebar } from "@/components/side-nav"
+import { StructuredData } from "@/components/structured-data"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { VisitCounter } from "@/components/visit-counter"
 
@@ -62,12 +63,15 @@ export const metadata = {
     ],
     authors: [
         {
-            name: "rcsen",
-            url: "https://rcsen.vercel.app",
+            name: "Rohan Sen",
+            url: siteConfig.url,
         },
     ],
-    creator: "rcsen",
+    creator: "Rohan Sen",
     metadataBase: new URL(siteConfig.url),
+    alternates: {
+        canonical: siteConfig.url,
+    },
     openGraph: {
         type: "website",
         locale: "en_US",
@@ -75,26 +79,27 @@ export const metadata = {
         title: siteConfig.name,
         description: siteConfig.description,
         siteName: siteConfig.name,
+        images: [siteConfig.ogImage],
     },
     twitter: {
         card: "summary_large_image",
         title: siteConfig.name,
         description: siteConfig.description,
-        images: [`${siteConfig.url}/og.jpg`],
-        creator: "@rcsen",
+        images: [siteConfig.ogImage],
+        creator: "@rohansen856",
     },
     icons: {
         icon: "/favicon.ico",
-        shortcut: "/favicon-16x16.png",
-        apple: "/apple-touch-icon.png",
     },
-    manifest: `${siteConfig.url}/site.webmanifest`,
+    manifest: "/manifest.webmanifest",
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <head />
+            <head>
+                <StructuredData />
+            </head>
             <body
                 className={cn(
                     "dark min-h-screen bg-background font-sans antialiased",

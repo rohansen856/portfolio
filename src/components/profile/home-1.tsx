@@ -44,7 +44,7 @@ export function Home(props: HomeProps) {
                             },
                             {
                                 name: "linkedin",
-                                link: "https://www.linkedin.com/in/rohan856/",
+                                link: "https://www.linkedin.com/in/rohansen856/",
                             },
                             {
                                 name: "instagram",

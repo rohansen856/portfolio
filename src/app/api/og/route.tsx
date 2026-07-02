@@ -110,7 +110,7 @@ export async function GET(req: Request) {
                                 fontWeight: "normal",
                             }}
                         >
-                            tx.Veil.com
+                            rcsen.vercel.app
                         </div>
                         <div
                             tw="flex items-center text-xl"
@@ -140,7 +140,7 @@ export async function GET(req: Request) {
                                     stroke-linejoin="round"
                                 />
                             </svg>
-                            <div tw="flex ml-2">github.com/Veil/Veil</div>
+                            <div tw="flex ml-2">github.com/rohansen856</div>
                         </div>
                     </div>
                 </div>

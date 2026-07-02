@@ -11,6 +11,7 @@ import {
     IconTableColumn,
 } from "@tabler/icons-react"
 import { motion } from "framer-motion"
+import { Lock } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { BentoGrid, BentoGridItem } from "@/components/bento-grid"
@@ -18,7 +19,17 @@ import { BentoGrid, BentoGridItem } from "@/components/bento-grid"
 import { Badge } from "../ui/badge"
 import { buttonVariants } from "../ui/button"
 
-const projects = [
+type ProjectDetail = {
+    image: string
+    name: string
+    badges: string[]
+    description: string
+    github: string | null
+    live: string | null
+    private?: boolean
+}
+
+const projects: { kind: string; details: ProjectDetail[] }[] = [
     {
         kind: "Large Scale Projects",
         details: [
@@ -55,7 +66,36 @@ const projects = [
                 ],
                 description:
                     "A comprehensive health companion mobile application designed to provide seamless healthcare services and accessibility features for all users with AI-powered diagnostics.",
-                github: "https://github.com/Medico24",
+                github: null,
+                live: null,
+                private: true,
+            },
+            {
+                image: "/projects/footfall.png",
+                name: "Footfall",
+                badges: ["typescript", "nextjs", "analytics", "backend", "dashboard"],
+                description:
+                    "A full-stack footfall analytics platform built with Next.js and TypeScript. It captures visitor traffic, surfaces real-time engagement metrics through interactive dashboards, and turns raw foot-traffic data into actionable business insights.",
+                github: null,
+                live: null,
+                private: true,
+            },
+            {
+                image: "/projects/zardoz.png",
+                name: "Zardoz",
+                badges: ["flutter", "dart", "community", "mobile", "marketplace"],
+                description:
+                    "A community app for embroidery (zardozi) artisans, connecting craftspeople and helping them showcase and sell their work.",
+                github: "https://github.com/rohansen856/zardoz",
+                live: null,
+            },
+            {
+                image: "/projects/practiceql.png",
+                name: "PracticeQL",
+                badges: ["typescript", "sql", "education", "nextjs", "UI", "UX"],
+                description:
+                    "A SQL learning playground where you can write, run, and learn SQL with guided tutorials, hands-on challenges, and visual schema diagrams.",
+                github: "https://github.com/rohansen856/practiceql",
                 live: null,
             },
             {
@@ -183,6 +223,22 @@ const projects = [
     {
         kind: "Backend Projects",
         details: [
+            {
+                image: "/projects/rcmail.png",
+                name: "RCMail",
+                badges: [
+                    "rust",
+                    "backend",
+                    "email",
+                    "minio",
+                    "API",
+                    "postgresql",
+                ],
+                description:
+                    "A single-domain, web-only email platform MVP built backend-first in Rust. Implements auth, mailbox provisioning, and draft CRUD, with an attachment pipeline backed by a MinIO object store.",
+                github: "https://github.com/rohansen856/rcmail",
+                live: null,
+            },
             {
                 image: "/projects/rust-backend.png",
                 name: "Fullscale Rust Backend",
@@ -356,6 +412,37 @@ const projects = [
     {
         kind: "Machine Learning & AI Projects",
         details: [
+            {
+                image: "/projects/upi-tracker.png",
+                name: "UPI Tracker",
+                badges: [
+                    "flutter",
+                    "dart",
+                    "on-device ML",
+                    "sqlite",
+                    "postgresql",
+                    "android",
+                ],
+                description:
+                    "An offline-first Android app that consolidates UPI payments across apps and banks into a single ledger by reading notifications and SMS in real time. A three-layer on-device ML cascade (spam, transactional, direction classifiers) keeps the ledger clean, backed by SQLite with bidirectional-safe Postgres sync.",
+                github: "https://github.com/rohansen856/receipt",
+                live: null,
+            },
+            {
+                image: "/projects/rrwei-sm.png",
+                name: "RRWEI-SM",
+                badges: [
+                    "python",
+                    "cryptography",
+                    "image-processing",
+                    "secure-multiparty",
+                    "research",
+                ],
+                description:
+                    "Robust Reversible Watermarking in Encrypted Images with Secure Multi-Party computation, enabling verifiable ownership and tamper detection on encrypted image data without exposing the underlying content.",
+                github: "https://github.com/rohansen856/RRWEI-SM",
+                live: null,
+            },
             {
                 image: "/projects/sign-language.png",
                 name: "Sign Language Detection",
@@ -555,6 +642,12 @@ export function Projects() {
                                             </span>
                                             Live
                                         </Link>
+                                    )}
+                                    {i.private && (
+                                        <span className="flex items-center gap-1 self-center rounded-md border border-amber-600/30 bg-amber-600/10 px-2 py-0.5 text-xs font-medium text-amber-500/80">
+                                            <Lock className="size-3" />
+                                            Private repo
+                                        </span>
                                     )}
                                 </div>
                             </div>
@@ -880,11 +973,11 @@ const items = [
             <span className="text-sm">
                 Healthcare management platform providing 24/7 medical services and patient care solutions.
                 <Link
-                    href={"https://github.com/Medico24/"}
+                    href={"https://medico24.in/"}
                     target="_blank"
                     className="text-blue-500 ml-1"
                 >
-                    GitHub
+                    Live Website
                 </Link>
             </span>
         ),

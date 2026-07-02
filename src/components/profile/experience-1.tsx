@@ -17,15 +17,29 @@ type ExperienceArrProps = {
 export function Experience() {
     const experiences: ExperienceArrProps = [
         {
+            name: "Pokus",
+            position: "Software Engineer Intern",
+            start: new Date("2026-04-01"),
+            end: new Date(),
+            timeline: "Apr 2026 - Present",
+            points: [
+                "Part of the core engineering team building and bug-fixing the Flutter app, backend, and overall system architecture.",
+                "Built the CMS platform and designed the database schema for the best possible structure and scalability.",
+                "Optimized app performance and speed, and implemented UI/UX improvements across the app.",
+            ],
+            color: "teal",
+            logo: "/experience/pokus.png",
+        },
+        {
             name: "European Summer of Code'26",
             position: "Open Source Mentee Intern",
             start: new Date("2025-12-01"),
             end: new Date("2026-03-31"),
             timeline: "Dec 2025 - Mar 2026",
             points: [
-                "European Summer of Code 2026 Mentee under OpenML & AIonDemand",
-                "Built AutoML evaluation workflow on OpenML, automating dataset ingestion, model benchmarking, and experiment tracking.",
-                "Developed ML utilities for AIonDemand improving model stability across demand prediction workloads.",
+                "Worked on AI/ML libraries under the AI for Europe initiative, contributing to AIonDemand and the OpenML repository.",
+                "Collaborated with core developers on their time-series model and model indexing.",
+                "Delivered backend fixes and library-wide improvements across the OpenML ecosystem.",
             ],
             color: "teal",
             logo: "/experience/esoc.png",
@@ -128,7 +142,7 @@ export function Experience() {
                     key={exp.name}
                     className={cn(
                         "relative mb-12 overflow-hidden md:mb-4 md:border-l-4 md:pl-4",
-                        `border-${exp.color}-600/50 from-${exp.color}-600/10 to-transparent py-4 md:bg-gradient-to-r`
+                        "border-teal-600/50 from-teal-600/10 to-transparent py-4 md:bg-gradient-to-r"
                     )}
                 >
                     {exp.logo && (
